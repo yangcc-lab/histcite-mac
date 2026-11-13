@@ -1,0 +1,336 @@
+FN Thomson Reuters Web of Knowledge
+VR 1.0
+MG HistCite 12.03.17
+MD Fri Nov 13 14:22:27 2026
+MT Native persistence test
+MC Metadata edited through the native macOS app
+MO 13 November 2026
+TD READ: READ description
+   SECOND: SECOND description
+ER
+
+PT J
+AU Citer21, A
+TI Probe 21 nonnumeric volume same
+SO 
+CR Probe21 A, 2000, BOOKA, VX
+   Probe21 A, 2000, BOOKB, VX
+NR 2
+TC 0
+PY 2020
+UT refprobe:21
+TG READ SECOND
+ER
+
+PT J
+AU Citer11, A
+TI Probe 11 page different with same DOI
+SO 
+CR Probe11 A, 2000, ONE JOURNAL, P3, DOI 10.9999/K
+   Probe11 A, 2000, ONE JOURNAL, P4, DOI 10.9999/K
+NR 2
+TC 0
+PY 2020
+UT refprobe:11
+TG READ SECOND
+ER
+
+PT J
+AU Citer5, A
+TI Probe 5 book different DOI
+SO 
+CR Probe05 A, 2000, BOOK TITLE, DOI 10.9999/C
+   Probe05 A, 2000, BOOK TITLE, DOI 10.9999/D
+NR 2
+TC 0
+PY 2020
+UT refprobe:5
+TG READ SECOND
+ER
+
+PT J
+AU Citer2, A
+TI Probe 2 book similar words
+SO 
+CR Probe02 A, 2000, THE DISCURSIVE POWER OF MEMES
+   Probe02 A, 2000, THE DISCURSE POWER OF MEMES
+NR 2
+TC 0
+PY 2020
+UT refprobe:2
+TG READ SECOND
+ER
+
+PT J
+AU Citer13, A
+TI Probe 13 book title same first 20
+SO 
+CR Probe13 A, 2000, ABCDEFGHIJKLMNOPQRST FIRST
+   Probe13 A, 2000, ABCDEFGHIJKLMNOPQRST SECOND
+NR 2
+TC 0
+PY 2020
+UT refprobe:13
+TG READ SECOND
+ER
+
+PT J
+AU Citer9, A
+TI Probe 9 page different DOI
+SO 
+CR Probe09 A, 2000, ONE JOURNAL, P3, DOI 10.9999/G
+   Probe09 A, 2000, ONE JOURNAL, P3, DOI 10.9999/H
+NR 2
+TC 0
+PY 2020
+UT refprobe:9
+TG READ SECOND
+ER
+
+PT J
+AU Citer12, A
+TI Probe 12 book title same first 8
+SO 
+CR Probe12 A, 2000, ABCDEFGH FIRST
+   Probe12 A, 2000, ABCDEFGH SECOND
+NR 2
+TC 0
+PY 2020
+UT refprobe:12
+TG READ SECOND
+ER
+
+PT J
+AU Citer16, A
+TI Probe 16 book same beginning DOI
+SO 
+CR Probe16 A, 2000, BOOK TITLE, DOI 10.9999/1234567890abcdef
+   Probe16 A, 2000, BOOK TITLE, DOI 10.9999/1234567890ghijkl
+NR 2
+TC 0
+PY 2020
+UT refprobe:16
+TG READ SECOND
+ER
+
+PT J
+AU Citer7, A
+TI Probe 7 volume same journal different DOI
+SO 
+CR Probe07 A, 2000, ONE JOURNAL, V2, DOI 10.9999/E
+   Probe07 A, 2000, ONE JOURNAL, V2, DOI 10.9999/F
+NR 2
+TC 0
+PY 2020
+UT refprobe:7
+TG READ SECOND
+ER
+
+PT J
+AU Citer22, A
+TI Probe 22 extra vs source
+SO 
+CR Probe22 A, 2000, BOOKA, CHAPTER
+   Probe22 A, 2000, BOOKA
+NR 2
+TC 0
+PY 2020
+UT refprobe:22
+TG READ SECOND
+ER
+
+PT J
+AU Citer1, A
+TI Probe 1 book full title
+SO 
+CR Probe01 A, 2000, BOOK TITLE FIRST
+   Probe01 A, 2000, BOOK TITLE SECOND
+NR 2
+TC 0
+PY 2020
+UT refprobe:1
+TG READ SECOND
+ER
+
+PT J
+AU Citer23, A
+TI Probe 23 DOI as first extra
+SO 
+CR Probe23 A, 2000, BOOKA, DOI abc
+   Probe23 A, 2000, OTHER, DOI abc
+NR 2
+TC 0
+PY 2020
+UT refprobe:23
+TG READ SECOND
+ER
+
+PT J
+AU Citer4, A
+TI Probe 4 book same DOI different title
+SO 
+CR Probe04 A, 2000, BOOK TITLE, DOI 10.9999/B
+   Probe04 A, 2000, OTHER TITLE, DOI 10.9999/B
+NR 2
+TC 0
+PY 2020
+UT refprobe:4
+TG READ SECOND
+ER
+
+PT J
+AU Citer20, A
+TI Probe 20 extra first field differs
+SO 
+CR Probe20 A, 2000, BOOKA, CHAPTERONE, P1
+   Probe20 A, 2000, BOOKA, CHAPTERTWO, P1
+NR 2
+TC 0
+PY 2020
+UT refprobe:20
+TG READ SECOND
+ER
+
+PT J
+AU Citer0, A
+TI Edited native record — 中文
+SO 
+CR Probe00 A, 2000, Book Title
+   Probe00 Andrew, 2000, Book Title
+NR 2
+TC 0
+PY 2020
+UT refprobe:0
+TG READ SECOND
+ER
+
+PT J
+AU Citer8, A
+TI Probe 8 page different journal
+SO 
+CR Probe08 A, 2000, ONE JOURNAL, P3
+   Probe08 A, 2000, OTHER JOURNAL, P3
+NR 2
+TC 0
+PY 2020
+UT refprobe:8
+TG READ SECOND
+ER
+
+PT J
+AU Citer14, A
+TI Probe 14 book title first token same
+SO 
+CR Probe14 A, 2000, BOOK FIRST
+   Probe14 A, 2000, BOOK SECOND
+NR 2
+TC 0
+PY 2020
+UT refprobe:14
+TG READ SECOND
+ER
+
+PT J
+AU Citer19, A
+TI Probe 19 extra page differs
+SO 
+CR Probe19 A, 2000, BOOKA, CHAPTER, P1
+   Probe19 A, 2000, BOOKB, CHAPTER, P2
+NR 2
+TC 0
+PY 2020
+UT refprobe:19
+TG READ SECOND
+ER
+
+PT J
+AU Citer15, A
+TI Probe 15 book same journal extra comma
+SO 
+CR Probe15 A, 2000, BOOK TITLE, First chapter
+   Probe15 A, 2000, BOOK TITLE, Second chapter
+NR 2
+TC 0
+PY 2020
+UT refprobe:15
+TG READ SECOND
+ER
+
+PT J
+AU Citer3, A
+TI Probe 3 book DOI
+SO 
+CR Probe03 A, 2000, BOOK TITLE
+   Probe03 A, 2000, BOOK TITLE, DOI 10.9999/A
+NR 2
+TC 0
+PY 2020
+UT refprobe:3
+TG READ SECOND
+ER
+
+PT J
+AU Citer24, A
+TI Probe 24 third field in key
+SO 
+CR Probe24 A, 2000, BOOKA, CHAPTER, V1, P2
+   Probe24 A, 2000, BOOKB, CHAPTER, V3, P4
+NR 2
+TC 0
+PY 2020
+UT refprobe:24
+TG READ SECOND
+ER
+
+PT J
+AU Citer17, A
+TI Probe 17 non-numeric volume
+SO 
+CR Probe17 A, 2000, BOOK TITLE, Vsecond edition
+   Probe17 A, 2000, BOOK TITLE, Vthird edition
+NR 2
+TC 0
+PY 2020
+UT refprobe:17
+TG READ SECOND
+ER
+
+PT J
+AU Citer6, A
+TI Probe 6 volume different journal
+SO 
+CR Probe06 A, 2000, ONE JOURNAL, V2
+   Probe06 A, 2000, OTHER JOURNAL, V2
+NR 2
+TC 0
+PY 2020
+UT refprobe:6
+TG READ SECOND
+ER
+
+PT J
+AU Citer18, A
+TI Probe 18 extra segment ignores source
+SO 
+CR Probe18 A, 2000, BOOKA, CHAPTER
+   Probe18 A, 2000, BOOKB, CHAPTER
+NR 2
+TC 0
+PY 2020
+UT refprobe:18
+TG READ SECOND
+ER
+
+PT J
+AU Citer10, A
+TI Probe 10 page volume different DOI
+SO 
+CR Probe10 A, 2000, ONE JOURNAL, V2, P3, DOI 10.9999/I
+   Probe10 A, 2000, ONE JOURNAL, V2, P3, DOI 10.9999/J
+NR 2
+TC 0
+PY 2020
+UT refprobe:10
+TG READ SECOND
+ER
+

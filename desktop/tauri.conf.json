@@ -1,0 +1,13 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "HistCite Mac",
+  "version": "0.3.2",
+  "identifier": "local.rose.histcite-mac",
+  "build": { "frontendDist": "../ui" },
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [{ "label": "main", "title": "HistCite Mac", "width": 1360, "height": 880, "minWidth": 900, "minHeight": 620 }],
+    "security": { "csp": "default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src ipc: http://ipc.localhost; object-src 'none'" }
+  },
+  "bundle": { "active": true, "targets": ["app"], "icon": [], "shortDescription": "本機文獻引用分析", "category": "Education" }
+}

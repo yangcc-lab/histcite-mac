@@ -1,0 +1,275 @@
+FN HistCite Mac synthetic demonstration
+VR 1.0
+
+PT J
+AU Avery, A
+TI Starting a literature map
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2011
+VL 1
+IS 1
+BP 1
+EP 9
+TC 120
+NR 0
+UT DEMO:001
+ER
+
+PT J
+AU Bennett, B
+TI Finding connections between papers
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2012
+VL 2
+IS 1
+BP 11
+EP 19
+TC 110
+NR 1
+UT DEMO:002
+CR Avery A, 2011, DEMO J RES, V1, P1
+ER
+
+PT J
+AU Carter, C
+TI Local citation networks for a small collection
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2013
+VL 3
+IS 1
+BP 21
+EP 29
+TC 100
+NR 2
+UT DEMO:003
+CR Avery A, 2011, DEMO J RES, V1, P1
+   Bennett B, 2012, DEMO J RES, V2, P11
+ER
+
+PT J
+AU Diaz, D
+TI Reading citation paths across disciplines
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2015
+VL 4
+IS 1
+BP 31
+EP 39
+TC 90
+NR 2
+UT DEMO:004
+CR Avery A, 2011, DEMO J RES, V1, P1
+   Carter C, 2013, DEMO J RES, V3, P21
+ER
+
+PT J
+AU Ellis, E
+TI Comparing journals in a research field
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2016
+VL 5
+IS 1
+BP 41
+EP 49
+TC 80
+NR 2
+UT DEMO:005
+CR Bennett B, 2012, DEMO J RES, V2, P11
+   Carter C, 2013, DEMO J RES, V3, P21
+ER
+
+PT J
+AU Finch, F
+TI Following ideas through citation histories
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2017
+VL 6
+IS 1
+BP 51
+EP 59
+TC 70
+NR 3
+UT DEMO:006
+CR Avery A, 2011, DEMO J RES, V1, P1
+   Carter C, 2013, DEMO J RES, V3, P21
+   Diaz D, 2015, DEMO J RES, V4, P31
+ER
+
+PT J
+AU Gray, G
+TI Author collaboration and knowledge exchange
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2018
+VL 7
+IS 1
+BP 61
+EP 69
+TC 60
+NR 2
+UT DEMO:007
+CR Diaz D, 2015, DEMO J RES, V4, P31
+   Ellis E, 2016, DEMO J RES, V5, P41
+ER
+
+PT J
+AU Harper, H
+TI Mapping a growing literature collection
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2020
+VL 8
+IS 1
+BP 71
+EP 79
+TC 50
+NR 4
+UT DEMO:008
+CR Carter C, 2013, DEMO J RES, V3, P21
+   Ellis E, 2016, DEMO J RES, V5, P41
+   Finch F, 2017, DEMO J RES, V6, P51
+   Gray G, 2018, DEMO J RES, V7, P61
+ER
+
+PT J
+AU Iverson, I
+TI Using historiographs to plan a review
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2021
+VL 9
+IS 1
+BP 81
+EP 89
+TC 40
+NR 3
+UT DEMO:009
+CR Diaz D, 2015, DEMO J RES, V4, P31
+   Finch F, 2017, DEMO J RES, V6, P51
+   Harper H, 2020, DEMO J RES, V8, P71
+ER
+
+PT J
+AU Jordan, J
+TI Transparent workflows for literature analysis
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2022
+VL 10
+IS 1
+BP 91
+EP 99
+TC 30
+NR 3
+UT DEMO:010
+CR Ellis E, 2016, DEMO J RES, V5, P41
+   Gray G, 2018, DEMO J RES, V7, P61
+   Harper H, 2020, DEMO J RES, V8, P71
+ER
+
+PT J
+AU Kendall, K
+TI Revisiting citation patterns over time
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2023
+VL 11
+IS 1
+BP 101
+EP 109
+TC 20
+NR 4
+UT DEMO:011
+CR Finch F, 2017, DEMO J RES, V6, P51
+   Harper H, 2020, DEMO J RES, V8, P71
+   Iverson I, 2021, DEMO J RES, V9, P81
+   Jordan J, 2022, DEMO J RES, V10, P91
+ER
+
+PT J
+AU Lane, L
+TI A practical guide to reading research networks
+SO DEMO JOURNAL OF RESEARCH
+J9 DEMO J RES
+DT Article
+LA English
+DE citation networks; literature review
+AB Fictional record created to demonstrate HistCite Mac. This is not a real publication.
+C1 Example University, Department of Research, Example City, USA.
+PY 2025
+VL 12
+IS 1
+BP 111
+EP 119
+TC 10
+NR 5
+UT DEMO:012
+CR Avery A, 2011, DEMO J RES, V1, P1
+   Harper H, 2020, DEMO J RES, V8, P71
+   Iverson I, 2021, DEMO J RES, V9, P81
+   Jordan J, 2022, DEMO J RES, V10, P91
+   Kendall K, 2023, DEMO J RES, V11, P101
+ER
+
+EF

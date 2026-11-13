@@ -1,0 +1,11097 @@
+[
+  {
+    "case": "different UT only",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change TI Different title",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Different title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change SO OTHER JOURNAL",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "OTHER JOURNAL"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change J9 OTHER ABBR",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "OTHER ABBR"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change PY 2011",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2011"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2011"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "change VL 6",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "6"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "6"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "change IS 3",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "3"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "change BP 102",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "102"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change EP 999",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "999"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AR e999",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e999"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e999"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "change DI 10.1234/different",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/different"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change PT B",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "B"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change TC 90",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "90"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "90"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change DT Review",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ],
+        "DT": [
+          "Review"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change PD DEC",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ],
+        "PD": [
+          "DEC"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname, AB', 'Newsecond, X']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Newsecond, X"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname, AC', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AC",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname, BB', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, BB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, BB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "change AU ['LongsurnOTHER, AB', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "LongsurnOTHER, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['LONGSURNAME, AB', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "LONGSURNAME, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname AB', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname, A', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, A",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "change AU ['Longsurname, Andrew', 'Coauthor, CD']",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, Andrew",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing AU on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "[Anon]"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "missing AU on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "[Anon]"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing PY on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          ""
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "missing PY on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          ""
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing VL on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "missing VL on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing BP on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing BP on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing AR on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "missing AR on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing SO on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing SO on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          ""
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing J9 on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing J9 on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing DI on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing DI on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing TI on second",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "missing TI on both",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          ""
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "variant VL 05",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "05"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "05"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "variant VL 5A",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5A"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5A"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "variant VL S5",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "S5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "S5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "variant VL 5.0",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5.0"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5.0"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "variant BP 0101",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "0101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "variant BP 101A",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101A"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "variant BP S101",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "S101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "variant BP 101.0",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101.0"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "same UT different all bibliographic fields",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Another, Z"
+        ],
+        "TI": [
+          "Another record"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2024"
+        ],
+        "VL": [
+          "98"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "999"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.9999/other"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Another, Z"
+        ],
+        "TI": [
+          "Another record"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "999"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2024"
+        ],
+        "VL": [
+          "98"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.9999/other"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "same DOI different bibliography",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Another, Z"
+        ],
+        "TI": [
+          "Another record"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2024"
+        ],
+        "VL": [
+          "98"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "999"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Another, Z"
+        ],
+        "TI": [
+          "Another record"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "999"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2024"
+        ],
+        "VL": [
+          "98"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "merge counts and references",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Updated title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "90"
+        ],
+        "NR": [
+          "2"
+        ],
+        "CR": [
+          "Other A, 2001, JOURNAL, V1, P2",
+          "Other B, 2002, JOURNAL, V2, P3"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ],
+        "AB": [
+          "Updated abstract"
+        ],
+        "C1": [
+          "New address"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "90"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "all identity fields absent",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "[Anon]"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          ""
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "PY": [
+          ""
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "article number with no page",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e999"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e999"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "article number missing on second no page",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "article number case without page",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "E123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "hyphenated surname",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Long-surname, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "author order",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Coauthor, CD",
+          "Longsurname, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Coauthor, CD",
+          "Longsurname, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "author accent",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurnáme, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "same prefix eight surname",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "LongsurnZZZ, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "surname seventh change",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "LongsuZZZZZ, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "LongsuZZZZZ, AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "author suffix punctuation",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname., AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname., AB"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "merged": false
+  },
+  {
+    "case": "lowercase author",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "longsurname, ab"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  },
+  {
+    "case": "reference spelling only",
+    "input": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      },
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "TC": [
+          "3"
+        ],
+        "NR": [
+          "1"
+        ],
+        "CR": [
+          "Target A, 2000, ALTERNATE, V1, P1"
+        ],
+        "UT": [
+          "WOS:SECOND"
+        ]
+      }
+    ],
+    "original": [
+      {
+        "PT": [
+          "J"
+        ],
+        "AU": [
+          "Longsurname, AB",
+          "Coauthor, CD"
+        ],
+        "TI": [
+          "Original title"
+        ],
+        "SO": [
+          "JOURNAL ALPHA"
+        ],
+        "J9": [
+          "J ALPHA"
+        ],
+        "CR": [
+          "Target A, 2000, JOURNAL, V1, P1"
+        ],
+        "NR": [
+          "1"
+        ],
+        "TC": [
+          "3"
+        ],
+        "BP": [
+          "101"
+        ],
+        "EP": [
+          "110"
+        ],
+        "AR": [
+          "e123"
+        ],
+        "PY": [
+          "2010"
+        ],
+        "VL": [
+          "5"
+        ],
+        "IS": [
+          "2"
+        ],
+        "DI": [
+          "10.1234/base"
+        ],
+        "UT": [
+          "WOS:BASE"
+        ]
+      }
+    ],
+    "merged": true
+  }
+]

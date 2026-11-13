@@ -1,0 +1,403 @@
+﻿FN Thomson Reuters Web of Knowledge™
+VR 1.0
+PT J
+AU Smith, AB
+AF Smith, AB
+TI Synthetic target plain
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+BP 101
+EP 101
+DI 10.99999/plain
+NR 0
+TC 0
+UT WOS:PROBE_plain
+ER
+
+PT J
+AU Seiffert-Brockmann, J
+AF Seiffert-Brockmann, J
+TI Synthetic target hyphen
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+BP 102
+EP 102
+DI 10.99999/hyphen
+NR 0
+TC 0
+UT WOS:PROBE_hyphen
+ER
+
+PT J
+AU Van Schenck, R
+AF Van Schenck, R
+TI Synthetic target space
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+BP 103
+EP 103
+DI 10.99999/space
+NR 0
+TC 0
+UT WOS:PROBE_space
+ER
+
+PT J
+AU Gómez, A
+AF Gómez, A
+TI Synthetic target accent
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+BP 104
+EP 104
+DI 10.99999/accent
+NR 0
+TC 0
+UT WOS:PROBE_accent
+ER
+
+PT J
+AU Tuters, M
+AF Tuters, M
+TI Synthetic target article_page
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+BP 105
+EP 105
+AR 12345
+DI 10.99999/article-page
+NR 0
+TC 0
+UT WOS:PROBE_article_page
+ER
+
+PT J
+AU Weng, LL
+AF Weng, LL
+TI Synthetic target article_only
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2020
+VL 1
+AR 67890
+DI 10.99999/article-only
+NR 0
+TC 0
+UT WOS:PROBE_article_only
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case initial_full
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 200
+EP 200
+CR Smith AB, 2020, TEST JOURNAL, V1, P101
+NR 1
+TC 0
+UT WOS:PROBE_initial_full
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case initial_one
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 201
+EP 201
+CR Smith A, 2020, TEST JOURNAL, V1, P101
+NR 1
+TC 0
+UT WOS:PROBE_initial_one
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case wrong_initial
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 202
+EP 202
+CR Smith X, 2020, TEST JOURNAL, V1, P101
+NR 1
+TC 0
+UT WOS:PROBE_wrong_initial
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case wrong_journal
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 203
+EP 203
+CR Smith AB, 2020, OTHER JOURNAL, V1, P101
+NR 1
+TC 0
+UT WOS:PROBE_wrong_journal
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case no_volume
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 204
+EP 204
+CR Smith AB, 2020, TEST JOURNAL, P101
+NR 1
+TC 0
+UT WOS:PROBE_no_volume
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case no_page
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 205
+EP 205
+CR Smith AB, 2020, TEST JOURNAL, V1
+NR 1
+TC 0
+UT WOS:PROBE_no_page
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case wrong_year_doi
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 206
+EP 206
+CR Smith AB, 2019, TEST JOURNAL, V1, P101, DOI 10.99999/plain
+NR 1
+TC 0
+UT WOS:PROBE_wrong_year_doi
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case hyphen_exact
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 207
+EP 207
+CR Seiffert-Brockmann J, 2020, TEST JOURNAL, V1, P102
+NR 1
+TC 0
+UT WOS:PROBE_hyphen_exact
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case hyphen_join
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 208
+EP 208
+CR SeiffertBrockmann J, 2020, TEST JOURNAL, V1, P102
+NR 1
+TC 0
+UT WOS:PROBE_hyphen_join
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case hyphen_left
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 209
+EP 209
+CR Seiffert J, 2020, TEST JOURNAL, V1, P102
+NR 1
+TC 0
+UT WOS:PROBE_hyphen_left
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case hyphen_right
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 210
+EP 210
+CR Brockmann J, 2020, TEST JOURNAL, V1, P102
+NR 1
+TC 0
+UT WOS:PROBE_hyphen_right
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case space_exact
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 211
+EP 211
+CR Van Schenck R, 2020, TEST JOURNAL, V1, P103
+NR 1
+TC 0
+UT WOS:PROBE_space_exact
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case space_join
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 212
+EP 212
+CR VanSchenck R, 2020, TEST JOURNAL, V1, P103
+NR 1
+TC 0
+UT WOS:PROBE_space_join
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case space_right
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 213
+EP 213
+CR Schenck R, 2020, TEST JOURNAL, V1, P103
+NR 1
+TC 0
+UT WOS:PROBE_space_right
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case accent_exact
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 214
+EP 214
+CR Gómez A, 2020, TEST JOURNAL, V1, P104
+NR 1
+TC 0
+UT WOS:PROBE_accent_exact
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case accent_plain
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 215
+EP 215
+CR Gomez A, 2020, TEST JOURNAL, V1, P104
+NR 1
+TC 0
+UT WOS:PROBE_accent_plain
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case article_with_page
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 216
+EP 216
+CR Tuters M, 2020, TEST JOURNAL, V1, P105, DOI 10.99999/article-page
+NR 1
+TC 0
+UT WOS:PROBE_article_with_page
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case article_no_page
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 217
+EP 217
+CR Weng LL, 2020, TEST JOURNAL, V1, DOI 10.99999/article-only
+NR 1
+TC 0
+UT WOS:PROBE_article_no_page
+ER
+
+PT J
+AU Probe, A
+AF Probe, A
+TI Synthetic case doi_only
+SO TEST JOURNAL
+J9 TEST JOURNAL
+PY 2024
+VL 2
+BP 218
+EP 218
+CR DOI 10.99999/plain
+NR 1
+TC 0
+UT WOS:PROBE_doi_only
+ER
+
+EF

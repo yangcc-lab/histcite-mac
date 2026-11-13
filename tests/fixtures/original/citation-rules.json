@@ -1,0 +1,272 @@
+{
+  "source": "HistCite Pro 2.1 / HistCite 12.03.17 via Whisky Wine 7.7",
+  "identity_mapping": "Normalized exact title; DOI and publication year disambiguation if needed; all mappings unique",
+  "inputs": [
+    {
+      "path": "tests/fixtures/legacy-rule-probes.txt",
+      "sha256": "7d4f2d41e3b4034f9bec8cd7513292d866904619dce09fff29fdacfd0abc2180"
+    }
+  ],
+  "records": [
+    {
+      "node": 0,
+      "title": "Synthetic target article_only",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_article_only"
+    },
+    {
+      "node": 1,
+      "title": "Synthetic target plain",
+      "lcs": 3,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_plain"
+    },
+    {
+      "node": 2,
+      "title": "Synthetic target hyphen",
+      "lcs": 2,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_hyphen"
+    },
+    {
+      "node": 3,
+      "title": "Synthetic target space",
+      "lcs": 1,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_space"
+    },
+    {
+      "node": 4,
+      "title": "Synthetic target accent",
+      "lcs": 1,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_accent"
+    },
+    {
+      "node": 5,
+      "title": "Synthetic target article_page",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 0,
+      "id": "WOS:PROBE_article_page"
+    },
+    {
+      "node": 6,
+      "title": "Synthetic case initial_full",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_initial_full"
+    },
+    {
+      "node": 7,
+      "title": "Synthetic case initial_one",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_initial_one"
+    },
+    {
+      "node": 8,
+      "title": "Synthetic case wrong_initial",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_wrong_initial"
+    },
+    {
+      "node": 9,
+      "title": "Synthetic case wrong_journal",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_wrong_journal"
+    },
+    {
+      "node": 10,
+      "title": "Synthetic case no_volume",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_no_volume"
+    },
+    {
+      "node": 11,
+      "title": "Synthetic case no_page",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_no_page"
+    },
+    {
+      "node": 12,
+      "title": "Synthetic case wrong_year_doi",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_wrong_year_doi"
+    },
+    {
+      "node": 13,
+      "title": "Synthetic case hyphen_exact",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_hyphen_exact"
+    },
+    {
+      "node": 14,
+      "title": "Synthetic case hyphen_join",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_hyphen_join"
+    },
+    {
+      "node": 15,
+      "title": "Synthetic case hyphen_left",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_hyphen_left"
+    },
+    {
+      "node": 16,
+      "title": "Synthetic case hyphen_right",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_hyphen_right"
+    },
+    {
+      "node": 17,
+      "title": "Synthetic case space_exact",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_space_exact"
+    },
+    {
+      "node": 18,
+      "title": "Synthetic case space_join",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_space_join"
+    },
+    {
+      "node": 19,
+      "title": "Synthetic case space_right",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_space_right"
+    },
+    {
+      "node": 20,
+      "title": "Synthetic case accent_exact",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 1,
+      "cr": 1,
+      "id": "WOS:PROBE_accent_exact"
+    },
+    {
+      "node": 21,
+      "title": "Synthetic case accent_plain",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_accent_plain"
+    },
+    {
+      "node": 22,
+      "title": "Synthetic case article_with_page",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_article_with_page"
+    },
+    {
+      "node": 23,
+      "title": "Synthetic case article_no_page",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_article_no_page"
+    },
+    {
+      "node": 24,
+      "title": "Synthetic case doi_only",
+      "lcs": 0,
+      "gcs": 0,
+      "lcr": 0,
+      "cr": 1,
+      "id": "WOS:PROBE_doi_only"
+    }
+  ],
+  "edges": [
+    [
+      "WOS:PROBE_accent_exact",
+      "WOS:PROBE_accent"
+    ],
+    [
+      "WOS:PROBE_hyphen_join",
+      "WOS:PROBE_hyphen"
+    ],
+    [
+      "WOS:PROBE_hyphen_left",
+      "WOS:PROBE_hyphen"
+    ],
+    [
+      "WOS:PROBE_initial_full",
+      "WOS:PROBE_plain"
+    ],
+    [
+      "WOS:PROBE_initial_one",
+      "WOS:PROBE_plain"
+    ],
+    [
+      "WOS:PROBE_space_join",
+      "WOS:PROBE_space"
+    ],
+    [
+      "WOS:PROBE_wrong_journal",
+      "WOS:PROBE_plain"
+    ]
+  ],
+  "summary": {
+    "records": 25,
+    "edges": 7,
+    "gcs": 0
+  }
+}
