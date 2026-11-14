@@ -2,7 +2,7 @@
 name = "histcite-desktop"
 version = "0.3.4"
 edition = "2024"
-rust-version = "1.100"
+rust-version = "1.99.1"
 license = "MIT"
 description = "HistCite-style bibliometric analysis for macOS"
 repository = "https://github.com/yangnim21029/histcite-mac"
