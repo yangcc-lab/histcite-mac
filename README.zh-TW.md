@@ -8,13 +8,23 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 **從文獻匯入、資料整理到引用分析，主要操作均可在 Mac 本機完成，無須安裝 Windows、Wine 或額外的程式開發環境。**
 
-[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
+[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [60 秒操作示範](#60-秒看-histcite-mac-實際操作) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
 [![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
 
 徽章顯示自動檢查結果與專案維護評分，並非資安認證。[檢查範圍與已知限制](docs/security-review.md)包含舊版 Graphviz 尚待完成的審查。
+
+## 60 秒看 HistCite Mac 實際操作
+
+在 macOS 原生程式中，示範匯入 WoS 純文字檔、依 LCS／GCS 排序、查看作者索引、引用關係圖與文獻詳情。影片使用 12 筆虛構文獻、31 條本地引用連線，附英文字幕。
+
+https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
+
+[下載 MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [英文字幕（SRT）](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
+
+HistCite Mac 由楊景程獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
 
 ## 從文獻資料到引用關係：三步開始
 
