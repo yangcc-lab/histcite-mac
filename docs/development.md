@@ -32,7 +32,9 @@ The Rust core and its fixtures also run on Linux:
 cargo test --locked
 ```
 
-All 29 tests use synthetic fixtures checked into `tests/fixtures`; no research data or original HistCite installation is required.
+The Rust tests use synthetic fixtures and temporary files; no research data or original HistCite installation is required. They include import limits, recovery round trips, private file permissions and source-file protection.
+
+For security scans, see the [review and reproducible commands](security-review.md). Scanner checks also run weekly in GitHub Actions.
 
 Browser checks use real Rust output from the synthetic demo collection:
 

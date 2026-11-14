@@ -12,6 +12,10 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
+[![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
+
+徽章顯示自動檢查結果與專案維護評分，並非資安認證。[檢查範圍與已知限制](docs/security-review.md)包含舊版 Graphviz 尚待完成的審查。
+
 ## 從文獻資料到引用關係：三步開始
 
 ### 1. 下載並安裝

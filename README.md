@@ -12,6 +12,10 @@ HistCite Mac is an independently developed macOS bibliometric tool with a Rust a
 
 macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open source
 
+[![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
+
+These badges show automated check results and repository practices. See the [review scope and known limitations](docs/security-review.md), including the legacy Graphviz engine; they are not security certification.
+
 ## Start in three steps
 
 ### 1. Download and install
