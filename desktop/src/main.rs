@@ -1,3 +1,5 @@
+mod background;
+
 use histcite_core::{
     Analysis, MatchingMode,
     collection::{Collection, SavedGraph, Tag, atomic_write},
@@ -8,7 +10,6 @@ use serde_json::{Value, json};
 use std::{
     collections::BTreeSet,
     path::{Path, PathBuf},
-    sync::Mutex,
 };
 use tauri::{Emitter, Manager, State};
 use tauri_plugin_dialog::DialogExt;
@@ -34,8 +35,7 @@ struct Snapshot {
     sources: Vec<String>,
     marks: BTreeSet<String>,
 }
-#[derive(Default)]
-struct DataState(Mutex<Workspace>);
+type DataState = background::Background<Workspace>;
 #[derive(Serialize, Deserialize)]
 struct Recovery {
     collection: Option<Collection>,
@@ -160,7 +160,9 @@ impl Workspace {
     }
 }
 fn notify(app: &tauri::AppHandle, revision: u64) {
-    let _ = app.emit("collection-changed", revision);
+    if let Err(error) = app.emit("collection-changed", revision) {
+        eprintln!("Collection notification failed at revision {revision}: {error}");
+    }
 }
 fn read_collection(path: &str) -> Result<Collection, String> {
     let text = read_text(Path::new(path)).map_err(|e| format!("無法讀取 {path}：{e}"))?;
@@ -171,59 +173,67 @@ async fn initial_analysis(
     app: tauri::AppHandle,
     state: State<'_, DataState>,
 ) -> Result<Value, String> {
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    if w.initialized {
-        return w.view();
-    }
-    let mut paths: Vec<String> = std::env::args()
-        .skip(1)
-        .filter(|p| [".txt", ".hci", ".hcm"].iter().any(|ext| p.ends_with(ext)))
-        .collect();
-    if paths.is_empty() {
-        let recovery_file = recovery_path(&app)?;
-        if recovery_file.exists() {
-            let text = read_text(&recovery_file).map_err(|e| format!("無法讀取工作副本：{e}"))?;
-            let recovery: Recovery =
-                serde_json::from_str(&text).map_err(|e| format!("無法讀取工作副本：{e}"))?;
-            if let Some(c) = &recovery.collection {
+    state
+        .run(move |w| {
+            if w.initialized {
+                return w.view();
+            }
+            let mut paths: Vec<String> = std::env::args()
+                .skip(1)
+                .filter(|p| [".txt", ".hci", ".hcm"].iter().any(|ext| p.ends_with(ext)))
+                .collect();
+            if paths.is_empty() {
+                let recovery_file = recovery_path(&app)?;
+                if recovery_file.exists() {
+                    let text =
+                        read_text(&recovery_file).map_err(|e| format!("無法讀取工作副本：{e}"))?;
+                    let recovery: Recovery = serde_json::from_str(&text)
+                        .map_err(|e| format!("無法讀取工作副本：{e}"))?;
+                    if let Some(c) = &recovery.collection {
+                        c.validate()?;
+                        w.analysis = Some(c.analyze());
+                    }
+                    w.collection = recovery.collection;
+                    w.path = recovery.path;
+                    w.sources = recovery.sources;
+                    w.dirty = recovery.dirty;
+                    w.initialized = true;
+                    return w.view();
+                }
+                if let Ok(dir) = app.path().app_config_dir() {
+                    if let Ok(bytes) = std::fs::read(dir.join("last-files.json")) {
+                        paths = serde_json::from_slice(&bytes).unwrap_or_default();
+                    }
+                }
+            }
+            if !paths.is_empty() {
+                let mut c = read_collection(&paths[0])?;
+                for path in paths.iter().skip(1) {
+                    c.merge(read_collection(path)?);
+                }
                 c.validate()?;
                 w.analysis = Some(c.analyze());
+                w.path = if paths.len() == 1 && paths[0].ends_with(".hcm") {
+                    Some(PathBuf::from(&paths[0]))
+                } else {
+                    None
+                };
+                persist(&app, Some(&c), w.path.as_ref(), &paths, false)?;
+                w.collection = Some(c);
+                w.sources = paths;
             }
-            w.collection = recovery.collection;
-            w.path = recovery.path;
-            w.sources = recovery.sources;
-            w.dirty = recovery.dirty;
             w.initialized = true;
-            return w.view();
-        }
-        if let Ok(dir) = app.path().app_config_dir() {
-            if let Ok(bytes) = std::fs::read(dir.join("last-files.json")) {
-                paths = serde_json::from_slice(&bytes).unwrap_or_default();
-            }
-        }
-    }
-    if !paths.is_empty() {
-        let mut c = read_collection(&paths[0])?;
-        for path in paths.iter().skip(1) {
-            c.merge(read_collection(path)?);
-        }
-        c.validate()?;
-        w.analysis = Some(c.analyze());
-        w.path = if paths.len() == 1 && paths[0].ends_with(".hcm") {
-            Some(PathBuf::from(&paths[0]))
-        } else {
-            None
-        };
-        persist(&app, Some(&c), w.path.as_ref(), &paths, false)?;
-        w.collection = Some(c);
-        w.sources = paths;
-    }
-    w.initialized = true;
-    w.view()
+            w.view()
+        })
+        .await
 }
 #[tauri::command]
-fn current_analysis(state: State<'_, DataState>) -> Result<Value, String> {
-    state.0.lock().map_err(|e| e.to_string())?.view()
+async fn current_analysis(state: State<'_, DataState>) -> Result<Value, String> {
+    state.run(|w| w.view()).await
+}
+#[tauri::command]
+async fn current_revision(state: State<'_, DataState>) -> Result<u64, String> {
+    state.run(|w| Ok(w.revision)).await
 }
 #[tauri::command]
 async fn choose_files(
@@ -232,7 +242,7 @@ async fn choose_files(
     mode: MatchingMode,
     append: Option<bool>,
 ) -> Result<Value, String> {
-    let opened_revision = state.0.lock().map_err(|e| e.to_string())?.revision;
+    let opened_revision = state.run(|w| Ok(w.revision)).await?;
     let picker = app.clone();
     let files = tauri::async_runtime::spawn_blocking(move || {
         picker
@@ -255,52 +265,55 @@ async fn choose_files(
                 .map_err(|e| e.to_string())
         })
         .collect::<Result<_, _>>()?;
-    let mut imported = read_collection(&paths[0])?;
-    for path in paths.iter().skip(1) {
-        imported.merge(read_collection(path)?);
-    }
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    if w.revision != opened_revision {
-        return Err("開啟檔案期間集合已更新；請重新選擇檔案。".into());
-    }
-    let mut c = if append.unwrap_or(false) {
-        let mut previous = w.collection.clone().unwrap_or_default();
-        previous.merge(imported);
-        previous
-    } else {
-        imported
-    };
-    c.mode = mode;
-    let previous_snapshot = w.snapshot();
-    let previous_sources = w.sources.clone();
-    let previous_path = w.path.clone();
-    if append.unwrap_or(false) {
-        w.sources.extend(paths.clone());
-    } else {
-        w.sources = paths.clone();
-        w.path = if paths.len() == 1 && paths[0].ends_with(".hcm") {
-            Some(PathBuf::from(&paths[0]))
-        } else {
-            None
-        };
-    }
-    let mut result = w.commit(&app, c, "Imported files", false, false);
-    if result.is_ok() {
-        if let Some(old) = previous_snapshot {
-            w.remember(old);
-        }
-        result = w.view();
-    }
-    if result.is_err() {
-        w.sources = previous_sources;
-        w.path = previous_path;
-    }
-    let revision = w.revision;
-    drop(w);
-    if result.is_ok() {
-        notify(&app, revision);
-    }
-    result
+    state
+        .run(move |w| {
+            let first = paths.first().ok_or("沒有選擇檔案")?;
+            let mut imported = read_collection(first)?;
+            for path in paths.iter().skip(1) {
+                imported.merge(read_collection(path)?);
+            }
+            if w.revision != opened_revision {
+                return Err("開啟檔案期間集合已更新；請重新選擇檔案。".into());
+            }
+            let mut c = if append.unwrap_or(false) {
+                let mut previous = w.collection.clone().unwrap_or_default();
+                previous.merge(imported);
+                previous
+            } else {
+                imported
+            };
+            c.mode = mode;
+            let previous_snapshot = w.snapshot();
+            let previous_sources = w.sources.clone();
+            let previous_path = w.path.clone();
+            if append.unwrap_or(false) {
+                w.sources.extend(paths.clone());
+            } else {
+                w.sources = paths.clone();
+                w.path = if paths.len() == 1 && paths[0].ends_with(".hcm") {
+                    Some(PathBuf::from(&paths[0]))
+                } else {
+                    None
+                };
+            }
+            let mut result = w.commit(&app, c, "Imported files", false, false);
+            if result.is_ok() {
+                if let Some(old) = previous_snapshot {
+                    w.remember(old);
+                }
+                result = w.view();
+            }
+            if result.is_err() {
+                w.sources = previous_sources;
+                w.path = previous_path;
+            }
+            let revision = w.revision;
+            if result.is_ok() {
+                notify(&app, revision);
+            }
+            result
+        })
+        .await
 }
 #[tauri::command]
 async fn change_mode(
@@ -308,14 +321,16 @@ async fn change_mode(
     state: State<'_, DataState>,
     mode: MatchingMode,
 ) -> Result<Value, String> {
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    let mut c = w.collection.clone().ok_or("請先匯入資料")?;
-    c.mode = mode;
-    let v = w.commit(&app, c, "Changed matching mode", true, false)?;
-    let rev = w.revision;
-    drop(w);
-    notify(&app, rev);
-    Ok(v)
+    state
+        .run(move |w| {
+            let mut c = w.collection.clone().ok_or("請先匯入資料")?;
+            c.mode = mode;
+            let v = w.commit(&app, c, "Changed matching mode", true, false)?;
+            let rev = w.revision;
+            notify(&app, rev);
+            Ok(v)
+        })
+        .await
 }
 #[tauri::command]
 async fn mutate_collection(
@@ -324,149 +339,156 @@ async fn mutate_collection(
     revision: u64,
     operation: Value,
 ) -> Result<Value, String> {
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    if w.revision != revision && !(w.collection.is_none() && operation["action"] == "new") {
-        return Err("集合已在另一個視窗更新；請重新載入後再套用變更。".into());
-    }
-    let op = operation["action"].as_str().ok_or("缺少操作名稱")?;
-    let mut c = w.collection.clone().unwrap_or_default();
-    let string = |name: &str| operation[name].as_str().unwrap_or("").to_string();
-    let ids: BTreeSet<String> =
-        serde_json::from_value(operation.get("ids").cloned().unwrap_or(json!([])))
-            .map_err(|e| e.to_string())?;
-    let existing: BTreeSet<_> = c.records.iter().map(|r| r.id.clone()).collect();
-    if !ids.is_subset(&existing) {
-        return Err("選取的記錄已不存在".into());
-    }
-    match op {
-        "mark" | "unmark" => {
-            if op == "mark" {
-                w.marks.extend(ids);
-            } else {
-                w.marks.retain(|id| !ids.contains(id));
+    state
+        .run(move |w| {
+            if w.revision != revision && !(w.collection.is_none() && operation["action"] == "new") {
+                return Err("集合已在另一個視窗更新；請重新載入後再套用變更。".into());
             }
-            w.revision += 1;
-            let v = w.view()?;
-            let rev = w.revision;
-            drop(w);
-            notify(&app, rev);
-            return Ok(v);
-        }
-        "record" => c.edit_record(operation["id"].as_str(), &string("text"))?,
-        "delete" => c.delete(&ids),
-        "deduplicate" => c.consolidate(),
-        "properties" => {
-            c.title = string("title");
-            c.description = string("description");
-            c.created = string("created");
-            c.comment = string("comment");
-        }
-        "settings" => {
-            c.settings =
-                serde_json::from_value(operation["settings"].clone()).map_err(|e| e.to_string())?;
-            c.settings.validate()?;
-        }
-        "tag" => {
-            let name = string("name").trim().to_uppercase();
-            if name.is_empty()
-                || name.len() > 200
-                || name.chars().any(char::is_whitespace)
-                || name.contains([';', ':'])
-            {
-                return Err("請輸入有效標籤名稱（不含空白、分號或冒號）".into());
+            let op = operation["action"].as_str().ok_or("缺少操作名稱")?;
+            let mut c = w.collection.clone().unwrap_or_default();
+            let string = |name: &str| operation[name].as_str().unwrap_or("").to_string();
+            let ids: BTreeSet<String> =
+                serde_json::from_value(operation.get("ids").cloned().unwrap_or(json!([])))
+                    .map_err(|e| e.to_string())?;
+            let existing: BTreeSet<_> = c.records.iter().map(|r| r.id.clone()).collect();
+            if !ids.is_subset(&existing) {
+                return Err("選取的記錄已不存在".into());
             }
-            let t = c.tags.entry(name).or_insert_with(Tag::default);
-            t.description = string("description");
-            t.records.extend(ids);
-        }
-        "untag" => {
-            let names: Vec<String> = operation
-                .get("names")
-                .and_then(|v| serde_json::from_value(v.clone()).ok())
-                .unwrap_or_else(|| vec![string("name")]);
-            for name in names {
-                if let Some(t) = c.tags.get_mut(&name.to_uppercase()) {
-                    t.records.retain(|id| !ids.contains(id));
+            match op {
+                "mark" | "unmark" => {
+                    if op == "mark" {
+                        w.marks.extend(ids);
+                    } else {
+                        w.marks.retain(|id| !ids.contains(id));
+                    }
+                    w.revision += 1;
+                    let v = w.view()?;
+                    let rev = w.revision;
+                    notify(&app, rev);
+                    return Ok(v);
                 }
+                "record" => c.edit_record(operation["id"].as_str(), &string("text"))?,
+                "delete" => c.delete(&ids),
+                "deduplicate" => c.consolidate(),
+                "properties" => {
+                    c.title = string("title");
+                    c.description = string("description");
+                    c.created = string("created");
+                    c.comment = string("comment");
+                }
+                "settings" => {
+                    c.settings = serde_json::from_value(operation["settings"].clone())
+                        .map_err(|e| e.to_string())?;
+                    c.settings.validate()?;
+                }
+                "tag" => {
+                    let name = string("name").trim().to_uppercase();
+                    if name.is_empty()
+                        || name.len() > 200
+                        || name.chars().any(char::is_whitespace)
+                        || name.contains([';', ':'])
+                    {
+                        return Err("請輸入有效標籤名稱（不含空白、分號或冒號）".into());
+                    }
+                    let t = c.tags.entry(name).or_insert_with(Tag::default);
+                    t.description = string("description");
+                    t.records.extend(ids);
+                }
+                "untag" => {
+                    let names: Vec<String> = operation
+                        .get("names")
+                        .and_then(|v| serde_json::from_value(v.clone()).ok())
+                        .unwrap_or_else(|| vec![string("name")]);
+                    for name in names {
+                        if let Some(t) = c.tags.get_mut(&name.to_uppercase()) {
+                            t.records.retain(|id| !ids.contains(id));
+                        }
+                    }
+                    c.tags.retain(|_, t| !t.records.is_empty());
+                }
+                "clear_tags" => {
+                    for t in c.tags.values_mut() {
+                        t.records.retain(|id| !ids.contains(id));
+                    }
+                }
+                "rename" => {
+                    let names: BTreeSet<String> =
+                        serde_json::from_value(operation["names"].clone())
+                            .map_err(|e| e.to_string())?;
+                    c.replace_items(&string("kind"), &names, &string("replacement"))?;
+                }
+                "save_graph" => {
+                    let mut g: SavedGraph = serde_json::from_value(operation["graph"].clone())
+                        .map_err(|e| e.to_string())?;
+                    if g.id.is_empty() {
+                        g.id = now();
+                    }
+                    if g.records.iter().any(|id| !existing.contains(id)) {
+                        return Err("圖中包含不存在的文獻".into());
+                    }
+                    if let Some(old) = c.graphs.iter_mut().find(|x| x.id == g.id) {
+                        *old = g;
+                    } else {
+                        c.graphs.push(g);
+                    }
+                }
+                "delete_graph" => c.graphs.retain(|g| g.id != string("id")),
+                "undo" => {
+                    c = w.undo.last().ok_or("沒有可復原的變更")?.collection.clone();
+                }
+                "new" => c = Collection::default(),
+                "update_network" => {}
+                "reset_settings" => c.settings = Default::default(),
+                _ => return Err("不支援的集合操作".into()),
             }
-            c.tags.retain(|_, t| !t.records.is_empty());
-        }
-        "clear_tags" => {
-            for t in c.tags.values_mut() {
-                t.records.retain(|id| !ids.contains(id));
+            let defer = op == "rename" && operation["defer"].as_bool().unwrap_or(false);
+            let previous_location = (w.path.clone(), w.sources.clone(), w.marks.clone());
+            if op == "undo" {
+                let saved = w.undo.last().ok_or("沒有可復原的變更")?.clone();
+                w.path = saved.path;
+                w.sources = saved.sources;
+                w.marks = saved.marks;
             }
-        }
-        "rename" => {
-            let names: BTreeSet<String> =
-                serde_json::from_value(operation["names"].clone()).map_err(|e| e.to_string())?;
-            c.replace_items(&string("kind"), &names, &string("replacement"))?;
-        }
-        "save_graph" => {
-            let mut g: SavedGraph =
-                serde_json::from_value(operation["graph"].clone()).map_err(|e| e.to_string())?;
-            if g.id.is_empty() {
-                g.id = now();
+            if op == "new" {
+                w.path = None;
+                w.sources.clear();
+                w.marks.clear();
             }
-            if g.records.iter().any(|id| !existing.contains(id)) {
-                return Err("圖中包含不存在的文獻".into());
+            let result = w.commit(&app, c, op, op != "undo" && op != "update_network", defer);
+            if result.is_err() {
+                w.path = previous_location.0;
+                w.sources = previous_location.1;
+                w.marks = previous_location.2;
             }
-            if let Some(old) = c.graphs.iter_mut().find(|x| x.id == g.id) {
-                *old = g;
-            } else {
-                c.graphs.push(g);
+            let v = result?;
+            if op == "undo" {
+                w.undo.pop();
             }
-        }
-        "delete_graph" => c.graphs.retain(|g| g.id != string("id")),
-        "undo" => {
-            c = w.undo.last().ok_or("沒有可復原的變更")?.collection.clone();
-        }
-        "new" => c = Collection::default(),
-        "update_network" => {}
-        "reset_settings" => c.settings = Default::default(),
-        _ => return Err("不支援的集合操作".into()),
-    }
-    let defer = op == "rename" && operation["defer"].as_bool().unwrap_or(false);
-    let previous_location = (w.path.clone(), w.sources.clone(), w.marks.clone());
-    if op == "undo" {
-        let saved = w.undo.last().ok_or("沒有可復原的變更")?.clone();
-        w.path = saved.path;
-        w.sources = saved.sources;
-        w.marks = saved.marks;
-    }
-    if op == "new" {
-        w.path = None;
-        w.sources.clear();
-        w.marks.clear();
-    }
-    let result = w.commit(&app, c, op, op != "undo" && op != "update_network", defer);
-    if result.is_err() {
-        w.path = previous_location.0;
-        w.sources = previous_location.1;
-        w.marks = previous_location.2;
-    }
-    let v = result?;
-    if op == "undo" {
-        w.undo.pop();
-    }
-    let rev = w.revision;
-    let v = if op == "undo" { w.view()? } else { v };
-    drop(w);
-    notify(&app, rev);
-    Ok(v)
+            let rev = w.revision;
+            let v = if op == "undo" { w.view()? } else { v };
+            notify(&app, rev);
+            Ok(v)
+        })
+        .await
 }
 #[tauri::command]
-fn close_collection(app: tauri::AppHandle, state: State<'_, DataState>) -> Result<(), String> {
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    persist(&app, None, None, &[], false)?;
-    let rev = w.revision + 1;
-    *w = Workspace {
-        initialized: true,
-        revision: rev,
-        ..Default::default()
-    };
-    drop(w);
-    notify(&app, rev);
-    Ok(())
+async fn close_collection(
+    app: tauri::AppHandle,
+    state: State<'_, DataState>,
+) -> Result<(), String> {
+    state
+        .run(move |w| {
+            persist(&app, None, None, &[], false)?;
+            let rev = w.revision + 1;
+            *w = Workspace {
+                initialized: true,
+                revision: rev,
+                ..Default::default()
+            };
+            notify(&app, rev);
+            Ok(())
+        })
+        .await
 }
 #[tauri::command]
 async fn save_collection(
@@ -474,14 +496,15 @@ async fn save_collection(
     state: State<'_, DataState>,
     save_as: bool,
 ) -> Result<Option<String>, String> {
-    let (c, previous, revision) = {
-        let w = state.0.lock().map_err(|e| e.to_string())?;
-        (
-            w.collection.clone().ok_or("請先匯入資料")?,
-            w.path.clone(),
-            w.revision,
-        )
-    };
+    let (c, previous, revision) = state
+        .run(|w| {
+            Ok((
+                w.collection.clone().ok_or("請先匯入資料")?,
+                w.path.clone(),
+                w.revision,
+            ))
+        })
+        .await?;
     let path = if let Some(previous) = previous.filter(|_| !save_as) {
         previous
     } else {
@@ -501,23 +524,26 @@ async fn save_collection(
         };
         file.into_path().map_err(|e| e.to_string())?
     };
-    let mut w = state.0.lock().map_err(|e| e.to_string())?;
-    if w.revision != revision {
-        return Err("儲存期間集合已變更；請再按一次儲存。".into());
-    }
-    protect_source(&w, &path)?;
-    atomic_write_protected(
-        &path,
-        &serde_json::to_vec(&c).map_err(|e| e.to_string())?,
-        &protected_sources(&w),
-    )?;
-    persist(&app, Some(&c), Some(&path), &w.sources, false)?;
-    w.path = Some(path.clone());
-    w.dirty = false;
-    w.log.push(format!("{} Saved {}", now(), path.display()));
-    drop(w);
-    notify(&app, revision);
-    Ok(Some(path.to_string_lossy().to_string()))
+    state
+        .run(move |w| {
+            if w.revision != revision {
+                return Err("儲存期間集合已變更；請再按一次儲存。".into());
+            }
+            protect_source(&w, &path)?;
+            atomic_write_protected(
+                &path,
+                &serde_json::to_vec(&c).map_err(|e| e.to_string())?,
+                &protected_sources(&w),
+            )?;
+            persist(&app, Some(&c), Some(&path), &w.sources, false)?;
+            w.path = Some(path.clone());
+            w.dirty = false;
+            w.log.push(format!("{} Saved {}", now(), path.display()));
+            w.revision += 1;
+            notify(&app, w.revision);
+            Ok(Some(path.to_string_lossy().to_string()))
+        })
+        .await
 }
 fn protect_source(w: &Workspace, path: &Path) -> Result<(), String> {
     let target = path.canonicalize().unwrap_or_else(|_| path.to_path_buf());
@@ -547,37 +573,43 @@ async fn save_export(
     svg: Option<String>,
     ids: Option<Vec<String>>,
 ) -> Result<Option<String>, String> {
-    let data = {
-        let w = state.0.lock().map_err(|e| e.to_string())?;
-        if w.network_pending && format == "json" {
-            return Err("請先按 Update lists 更新引用網絡。".into());
-        }
-        match format.as_str() {
-            "json" => serde_json::to_vec_pretty(w.analysis.as_ref().ok_or("請先匯入文獻")?)
-                .map_err(|e| e.to_string())?,
-            "hci" => w
-                .collection
-                .as_ref()
-                .ok_or("請先匯入文獻")?
-                .hci(
-                    ids.as_ref()
-                        .map(|v| v.iter().cloned().collect::<BTreeSet<_>>())
-                        .as_ref(),
-                )
-                .into_bytes(),
-            "png" => {
-                use base64::Engine;
-                let text = content.ok_or("沒有匯出內容")?;
-                base64::engine::general_purpose::STANDARD
-                    .decode(text)
-                    .map_err(|e| e.to_string())?
+    let data_format = format.clone();
+    let (data, mut sources) = state
+        .run(move |w| {
+            let format = data_format;
+            if w.network_pending && format == "json" {
+                return Err("請先按 Update lists 更新引用網絡。".into());
             }
-            "csv" | "svg" | "dot" | "net" | "ps" => {
-                content.or(svg).ok_or("沒有匯出內容")?.into_bytes()
-            }
-            _ => return Err("不支援的匯出格式".into()),
-        }
-    };
+            let data = match format.as_str() {
+                "json" => serde_json::to_vec_pretty(w.analysis.as_ref().ok_or("請先匯入文獻")?)
+                    .map_err(|e| e.to_string())?,
+                "hci" => w
+                    .collection
+                    .as_ref()
+                    .ok_or("請先匯入文獻")?
+                    .hci(
+                        ids.as_ref()
+                            .map(|v| v.iter().cloned().collect::<BTreeSet<_>>())
+                            .as_ref(),
+                    )
+                    .into_bytes(),
+                "png" => {
+                    use base64::Engine;
+                    let text = content.ok_or("沒有匯出內容")?;
+                    base64::engine::general_purpose::STANDARD
+                        .decode(text)
+                        .map_err(|e| e.to_string())?
+                }
+                "csv" | "svg" | "dot" | "net" | "ps" => {
+                    content.or(svg).ok_or("沒有匯出內容")?.into_bytes()
+                }
+                _ => return Err("不支援的匯出格式".into()),
+            };
+            // Keep source identities from the exported snapshot as well as
+            // the current workspace if another window imports during the picker.
+            Ok((data, protected_sources(w)))
+        })
+        .await?;
     if data.len() > 200_000_000 {
         return Err("匯出內容超過 200 MB".into());
     }
@@ -597,13 +629,14 @@ async fn save_export(
         return Ok(None);
     };
     let path = file.into_path().map_err(|e| e.to_string())?;
-    let sources = {
-        let w = state.0.lock().map_err(|e| e.to_string())?;
-        protect_source(&w, &path)?;
-        protected_sources(&w)
-    };
-    atomic_write_protected(&path, &data, &sources)?;
-    Ok(Some(path.to_string_lossy().to_string()))
+    state
+        .run(move |w| {
+            protect_source(w, &path)?;
+            sources.extend(protected_sources(w));
+            atomic_write_protected(&path, &data, &sources)?;
+            Ok(Some(path.to_string_lossy().to_string()))
+        })
+        .await
 }
 #[tauri::command]
 async fn open_record(
@@ -612,15 +645,16 @@ async fn open_record(
     index: usize,
     number: usize,
 ) -> Result<(), String> {
-    let id = {
-        let w = state.0.lock().map_err(|e| e.to_string())?;
-        w.analysis
-            .as_ref()
-            .and_then(|a| a.records.get(index))
-            .ok_or("找不到這筆文獻")?
-            .id
-            .clone()
-    };
+    let id = state
+        .run(move |w| {
+            Ok(w.analysis
+                .as_ref()
+                .and_then(|a| a.records.get(index))
+                .ok_or("找不到這筆文獻")?
+                .id
+                .clone())
+        })
+        .await?;
     use std::hash::{Hash, Hasher};
     let mut hasher = std::collections::hash_map::DefaultHasher::new();
     id.hash(&mut hasher);
@@ -644,7 +678,8 @@ async fn open_record(
 async fn open_graph(app: tauri::AppHandle, graph_id: Option<String>) -> Result<(), String> {
     if let Some(window) = app.get_webview_window("graph") {
         if let Some(id) = &graph_id {
-            let _ = app.emit_to("graph", "load-graph", id);
+            app.emit_to("graph", "load-graph", id)
+                .map_err(|e| format!("無法同步圖形視窗：{e}"))?;
         }
         return window.set_focus().map_err(|e| e.to_string());
     }
@@ -674,21 +709,23 @@ async fn open_list(
     ids: Vec<String>,
     title: String,
 ) -> Result<(), String> {
-    let w = state.0.lock().map_err(|e| e.to_string())?;
-    let existing: BTreeSet<_> = w
-        .collection
-        .as_ref()
-        .ok_or("請先匯入資料")?
-        .records
-        .iter()
-        .map(|r| r.id.as_str())
-        .collect();
-    let ids: Vec<_> = ids
-        .into_iter()
-        .filter(|id| existing.contains(id.as_str()))
-        .collect();
-    let query = serde_json::to_string(&ids).map_err(|e| e.to_string())?;
-    drop(w);
+    let query = state
+        .run(move |w| {
+            let existing: BTreeSet<_> = w
+                .collection
+                .as_ref()
+                .ok_or("請先匯入資料")?
+                .records
+                .iter()
+                .map(|r| r.id.as_str())
+                .collect();
+            let ids: Vec<_> = ids
+                .into_iter()
+                .filter(|id| existing.contains(id.as_str()))
+                .collect();
+            serde_json::to_string(&ids).map_err(|e| e.to_string())
+        })
+        .await?;
     use std::hash::{Hash, Hasher};
     let mut h = std::collections::hash_map::DefaultHasher::new();
     query.hash(&mut h);
@@ -741,13 +778,14 @@ async fn export_html(
     app: tauri::AppHandle,
     state: State<'_, DataState>,
 ) -> Result<Option<String>, String> {
-    let data = {
-        let w = state.0.lock().map_err(|e| e.to_string())?;
-        if w.network_pending {
-            return Err("請先按 Update lists 更新引用網絡。".into());
-        }
-        w.view()?
-    };
+    let data = state
+        .run(|w| {
+            if w.network_pending {
+                return Err("請先按 Update lists 更新引用網絡。".into());
+            }
+            w.view()
+        })
+        .await?;
     if data.is_null() {
         return Err("請先匯入文獻".into());
     }
@@ -764,46 +802,52 @@ async fn export_html(
     let Some(file) = selected else {
         return Ok(None);
     };
-    let parent = file.into_path().map_err(|e| e.to_string())?;
-    let dir = parent.join(format!("HistCite-presentation-{}", now()));
-    std::fs::create_dir(&dir).map_err(|e| e.to_string())?;
-    let files = [
-        ("index.html", include_str!("../../ui/index.html")),
-        ("detail.html", include_str!("../../ui/detail.html")),
-        ("style.css", include_str!("../../ui/style.css")),
-        ("common.js", include_str!("../../ui/common.js")),
-        ("app.js", include_str!("../../ui/app.js")),
-        ("detail.js", include_str!("../../ui/detail.js")),
-        ("graph.js", include_str!("../../ui/graph.js")),
-        ("graph-layout.js", include_str!("../../ui/graph-layout.js")),
-        ("graphviz.js", include_str!("../../ui/graphviz.js")),
-        ("THIRD-PARTY.txt", include_str!("../../ui/THIRD-PARTY.txt")),
-    ];
-    for (name, text) in files {
-        let text = if name.ends_with(".html") {
-            text.replace(
-                "<script src=\"common.js\">",
-                "<script src=\"data.js\"></script><script src=\"common.js\">",
-            )
-        } else {
-            text.to_string()
-        };
-        atomic_write(&dir.join(name), text.as_bytes())?;
-    }
-    atomic_write(
-        &dir.join("Graphviz-source.zip"),
-        include_bytes!("../../ui/Graphviz-source.zip"),
-    )?;
-    let text = format!(
-        "window.__HISTCITE_EXPORT__={};",
-        serde_json::to_string(&data).map_err(|e| e.to_string())?
-    );
-    atomic_write(&dir.join("data.js"), text.as_bytes())?;
-    Ok(Some(dir.to_string_lossy().to_string()))
+    state
+        .run(move |_| {
+            let parent = file.into_path().map_err(|e| e.to_string())?;
+            let dir = parent.join(format!("HistCite-presentation-{}", now()));
+            std::fs::create_dir(&dir).map_err(|e| e.to_string())?;
+            let files = [
+                ("index.html", include_str!("../../ui/index.html")),
+                ("detail.html", include_str!("../../ui/detail.html")),
+                ("style.css", include_str!("../../ui/style.css")),
+                ("common.js", include_str!("../../ui/common.js")),
+                ("app.js", include_str!("../../ui/app.js")),
+                ("detail.js", include_str!("../../ui/detail.js")),
+                ("graph.js", include_str!("../../ui/graph.js")),
+                ("graph-layout.js", include_str!("../../ui/graph-layout.js")),
+                ("graphviz.js", include_str!("../../ui/graphviz.js")),
+                ("THIRD-PARTY.txt", include_str!("../../ui/THIRD-PARTY.txt")),
+            ];
+            for (name, text) in files {
+                let text = if name.ends_with(".html") {
+                    text.replace(
+                        "<script src=\"common.js\">",
+                        "<script src=\"data.js\"></script><script src=\"common.js\">",
+                    )
+                } else {
+                    text.to_string()
+                };
+                atomic_write(&dir.join(name), text.as_bytes())?;
+            }
+            atomic_write(
+                &dir.join("Graphviz-source.zip"),
+                include_bytes!("../../ui/Graphviz-source.zip"),
+            )?;
+            let text = format!(
+                "window.__HISTCITE_EXPORT__={};",
+                serde_json::to_string(&data).map_err(|e| e.to_string())?
+            );
+            atomic_write(&dir.join("data.js"), text.as_bytes())?;
+            Ok(Some(dir.to_string_lossy().to_string()))
+        })
+        .await
 }
 #[tauri::command]
-fn quit_app(app: tauri::AppHandle) {
+async fn quit_app(app: tauri::AppHandle, state: State<'_, DataState>) -> Result<(), String> {
+    state.finish().await;
     app.exit(0);
+    Ok(())
 }
 fn main() {
     tauri::Builder::default()
@@ -812,6 +856,7 @@ fn main() {
         .invoke_handler(tauri::generate_handler![
             initial_analysis,
             current_analysis,
+            current_revision,
             choose_files,
             change_mode,
             mutate_collection,
@@ -826,6 +871,19 @@ fn main() {
             export_html,
             quit_app
         ])
-        .run(tauri::generate_context!())
-        .expect("Unable to run HistCite Mac");
+        .build(tauri::generate_context!())
+        .expect("Unable to run HistCite Mac")
+        .run(|app, event| {
+            if let tauri::RunEvent::ExitRequested {
+                code: None, api, ..
+            } = event
+            {
+                api.prevent_exit();
+                let app = app.clone();
+                tauri::async_runtime::spawn(async move {
+                    app.state::<DataState>().finish().await;
+                    app.exit(0);
+                });
+            }
+        });
 }

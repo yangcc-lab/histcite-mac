@@ -69,6 +69,11 @@ const GraphLayout = (() => {
  let active=null;
  function cancel(){active?.();active=null;}
  function layout(dot,formats=['svg']) {
+  // Only these renderers are used by the app. Do not expose legacy image,
+  // plugin-discovery or other output paths through this worker interface.
+  if(!Array.isArray(formats)||!formats.length||formats.length>2||formats.some(f=>!['svg','ps'].includes(f))){
+   return Promise.reject(new Error('Unsupported graph output format.'));
+  }
   cancel();
   return new Promise((resolve,reject)=>{
    const source=`let _scriptName='';const HistCiteDot=${HistCiteDot.toString()};self.onmessage=async({data})=>{try{const out={};for(const format of data.formats){const m=await HistCiteDot({print:()=>{},printErr:()=>{}});m.FS.writeFile('/graph.dot',data.dot);m.callMain(['-q','-T'+format,'-o','/result','/graph.dot']);out[format]=m.FS.readFile('/result',{encoding:'utf8'});}self.postMessage({out});}catch(e){self.postMessage({error:String(e)});}};`;

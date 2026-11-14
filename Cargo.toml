@@ -1,7 +1,8 @@
 [package]
 name = "histcite-mac"
-version = "0.3.3"
+version = "0.3.4"
 edition = "2024"
+rust-version = "1.100"
 license = "MIT"
 description = "Local bibliometric analysis with familiar HistCite workflows"
 repository = "https://github.com/yangnim21029/histcite-mac"

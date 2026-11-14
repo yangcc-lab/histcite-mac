@@ -72,7 +72,32 @@ window.H = {
   let text='PT '+(f.PT?.[0]||'J')+'\n';for(const[key,values]of Object.entries(f)){if(key==='PT')continue;values.forEach((v,i)=>text+=(i?'   ':key+' ')+v+'\n');}text+='ER\n';
   return H.invoke('mutate_collection',{revision:data.collection?.revision||0,operation:{action:'record',id,text}});
  },
- onChange:callback=>window.__TAURI__?.event?.listen?.('collection-changed',callback),
+ listen:async(name,callback)=>{
+  try{return await window.__TAURI__?.event?.listen?.(name,callback);}
+  catch(e){H.error('Window notifications unavailable: '+String(e?.message||e));}
+ },
+ onChange(callback,revision=()=>null){
+  if(!window.__TAURI__||window.__HISTCITE_EXPORT__)return;
+  let running=false,pending=false,check=false,disposed=false;
+  const refresh=async(force=false)=>{
+   if(disposed)return;
+   if(force)pending=true;else check=true;
+   if(running)return;
+   running=true;
+   try{while(!disposed&&(pending||check)){
+    const reload=pending;pending=false;check=false;
+    if(reload||await H.invoke('current_revision')!==revision())await callback();
+   }}catch(e){H.error(e);}finally{running=false;}
+  };
+  const focus=()=>refresh(),visible=()=>{if(document.visibilityState==='visible')refresh();};
+  window.addEventListener('focus',focus);
+  document.addEventListener('visibilitychange',visible);
+  const listener=H.listen('collection-changed',()=>refresh(true));
+  window.addEventListener('pagehide',()=>{
+   disposed=true;window.removeEventListener('focus',focus);document.removeEventListener('visibilitychange',visible);
+   listener.then(unlisten=>unlisten?.()).catch(H.error);
+  },{once:true});
+ },
 };
 if(window.__HISTCITE_EXPORT__)document.documentElement.classList.add('presentation');
 

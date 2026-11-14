@@ -44,7 +44,8 @@ with sync_playwright() as pw:
     context.add_init_script('''window.calls=[];window.__TAURI__={core:{invoke:async(name,args={})=>{
       calls.push({name,args});window.fixture??=await(await fetch('/fixture.json')).json();
       if(name==='mutate_collection'){if(args.operation.action!=='settings')throw Error('Unexpected mutation');fixture.settings=args.operation.settings;}
-      if(['initial_analysis','current_analysis','mutate_collection'].includes(name))return fixture;
+      if(name==='current_revision')return fixture.collection.revision;
+      if(['initial_analysis','current_analysis','mutate_collection'].includes(name))return structuredClone(fixture);
       if(['open_record','open_graph','save_export','print_window'].includes(name))return null;
       throw Error('Unexpected IPC '+name);
     }}};''')
@@ -161,6 +162,37 @@ with sync_playwright() as pw:
         assert graph.evaluate("calls.filter(c=>c.name==='open_record').length") == before + 3
         graph.get_by_role('button', name='Make graph', exact=True).focus()
     checks.append('circle/square/text-only: hover and leave, keyboard focus, tooltip, click, Enter and Space without scrolling')
+    # Deliberately drop notifications: focus must discover the changed revision.
+    page.evaluate("fixture.collection.title='Recovered on focus';fixture.collection.revision++;window.dispatchEvent(new Event('focus'))")
+    expect(page.locator('#collection-title')).to_have_text('Recovered on focus')
+    before = page.evaluate("calls.filter(c=>c.name==='current_analysis').length")
+    page.evaluate("window.dispatchEvent(new Event('focus'))")
+    page.wait_for_timeout(150)
+    assert page.evaluate("calls.filter(c=>c.name==='current_analysis').length") == before
+    detail = context.new_page()
+    detail.on('pageerror', lambda e: errors.append(str(e)))
+    detail.goto(url + '/detail.html?index=0')
+    detail.wait_for_selector('.detail-title')
+    detail.evaluate("fixture.records[0].title='Detail synchronized';fixture.collection.revision++;window.dispatchEvent(new Event('focus'))")
+    expect(detail.locator('.detail-title')).to_have_text('Detail synchronized')
+    # The graph request arrives before the collection containing it is refreshed.
+    graph.evaluate("""fixture.collection.graphs=[{id:'late-graph',records:fixture.records.slice(0,2).map(r=>r.id),settings:{layoutVersion:4,shape:'circle'}}];
+      fixture.collection.revision++;localStorage.setItem('histcite-load-graph','late-graph');
+      window.dispatchEvent(new Event('focus'));""")
+    expect(graph.locator('#graph-selection')).to_have_value('saved')
+    expect(graph.locator('#graph-canvas .graph-node')).to_have_count(2)
+    assert graph.evaluate("localStorage.getItem('histcite-load-graph')") is None
+    checks.append('lost notification: focus repairs main/detail/graph; unchanged revision skips reload; pending saved graph survives stale data')
+    engine = graph.evaluate("""async()=>{
+      for(const formats of [[],null,['png'],['svg:other'],['svg','ps','svg']]){
+        let rejected=false;try{await GraphLayout.layout('digraph { a -> b }',formats);}catch(e){rejected=String(e).includes('Unsupported graph output format');}
+        if(!rejected)throw Error('Unexpected renderer accepted');
+      }
+      const out=await GraphLayout.layout('digraph { a -> b }',['svg','ps']);
+      return out.svg.includes('<svg')&&out.ps.startsWith('%!PS');
+    }""")
+    assert engine
+    checks.append('graph worker rejects unsupported renderers and renders SVG/PostScript')
     # Touch must still activate the menus without a preliminary hover.
     touch = browser.new_context(has_touch=True, viewport={'width': 1100, 'height': 800})
     touch.route('**/fixture.json', lambda r: r.fulfill(body=payload, content_type='application/json'))
