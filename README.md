@@ -16,6 +16,16 @@ macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open sourc
 
 These badges show automated check results and repository practices. See the [review scope and known limitations](docs/security-review.md), including the legacy Graphviz engine; they are not security certification.
 
+## Watch HistCite Mac in 60 seconds
+
+See a native macOS demonstration of importing a WoS plain-text file, sorting by LCS and GCS, browsing authors, viewing a Historiograph and opening a record's details. The video uses 12 fictional records with 31 local citation links and includes English captions.
+
+[Watch the 60-second demo](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4)
+
+[Download the MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
+
+HistCite Mac is an independent implementation by Ching-Cheng Yang. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
+
 ## Start in three steps
 
 ### 1. Download and install

@@ -16,6 +16,16 @@ macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
 徽章顯示自動檢查結果與專案維護評分，並非資安認證。[檢查範圍與已知限制](docs/security-review.md)包含舊版 Graphviz 尚待完成的審查。
 
+## 60 秒看 HistCite Mac 實際操作
+
+在 macOS 原生程式中，示範匯入 WoS 純文字檔、依 LCS／GCS 排序、查看作者索引、引用關係圖與文獻詳情。影片使用 12 筆虛構文獻、31 條本地引用連線，附英文字幕。
+
+[觀看 60 秒示範影片](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4)
+
+[下載 MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [英文字幕（SRT）](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
+
+HistCite Mac 由楊景程獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
+
 ## 從文獻資料到引用關係：三步開始
 
 ### 1. 下載並安裝
