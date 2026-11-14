@@ -4,7 +4,7 @@ The [Mac download](https://github.com/yangnim21029/histcite-mac/releases/latest)
 
 ## Build the Mac app
 
-Use macOS 13 or later, Xcode Command Line Tools, a current stable Rust toolchain (edition 2024), and Python 3.9 or later. The UI has no npm build step. The offline layout engine is already included.
+Use macOS 13 or later, Xcode Command Line Tools, Rust 1.100 or later (edition 2024), and Python 3.9 or later. The UI has no npm build step. The offline layout engine is already included.
 
 ```sh
 git clone https://github.com/yangnim21029/histcite-mac.git
@@ -25,6 +25,8 @@ This installs both Rust targets, builds each architecture, combines them with `l
 After dependency changes, regenerate bundled Rust license notices with `python3 scripts/package_rust_notices.py`. This reads the locked macOS dependency graph and retrieves missing upstream notices. Regular builds use the checked-in notices and do not need that step.
 
 ## Run the tests
+
+Rust 1.100 is the tested support floor, not a claim that earlier compilers cannot work. CI tests the core on that version and current stable. On macOS, run `cargo test --manifest-path desktop/Cargo.toml --locked` for background scheduling tests as well.
 
 The Rust core and its fixtures also run on Linux:
 
