@@ -8,7 +8,7 @@ HistCite Mac is an independently developed macOS bibliometric tool with a Rust a
 
 **Importing, organizing and analyzing your collection all happen locally on your Mac. No Windows, Wine or programming environment is needed.**
 
-[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
+[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [Watch the demo](#watch-histcite-mac-in-60-seconds) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open source
 
@@ -20,7 +20,7 @@ These badges show automated check results and repository practices. See the [rev
 
 See a native macOS demonstration of importing a WoS plain-text file, sorting by LCS and GCS, browsing authors, viewing a Historiograph and opening a record's details. The video uses 12 fictional records with 31 local citation links and includes English captions.
 
-[Watch the 60-second demo](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4)
+https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
 [Download the MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
