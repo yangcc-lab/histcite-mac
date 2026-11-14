@@ -66,6 +66,7 @@ impl Collection {
         a
     }
     pub fn from_text(text: &str, source: &str) -> Result<Self, String> {
+        crate::safety::check_text_size(text)?;
         if text.trim_start().starts_with('{') {
             let c: Self = serde_json::from_str(text).map_err(|e| format!("集合格式錯誤：{e}"))?;
             if c.schema_version != 1 {
@@ -138,6 +139,10 @@ impl Collection {
     }
     pub fn validate(&self) -> Result<(), String> {
         self.settings.validate()?;
+        crate::safety::validate_records(&self.records)?;
+        for graph in &self.graphs {
+            crate::safety::validate_json_depth(&graph.settings)?;
+        }
         let mut ids = BTreeSet::new();
         for r in &self.records {
             if r.id.is_empty() || !ids.insert(r.id.clone()) {
@@ -147,7 +152,7 @@ impl Collection {
         if self.graphs.len() > 1000 || self.tags.len() > 10000 {
             return Err("集合標籤或圖形過多".into());
         }
-        Ok(())
+        crate::safety::check_serialized_size(self)
     }
     /// Reconcile imported records, and remap collection references to survivors.
     pub fn consolidate(&mut self) {
@@ -571,27 +576,5 @@ pub fn fields_to_wos(f: &BTreeMap<String, Vec<String>>) -> String {
     out
 }
 pub fn atomic_write(path: &Path, bytes: &[u8]) -> Result<(), String> {
-    use std::io::Write;
-    let parent = path.parent().ok_or("無效存檔路徑")?;
-    std::fs::create_dir_all(parent).map_err(|e| e.to_string())?;
-    let stamp = std::time::SystemTime::now()
-        .duration_since(std::time::UNIX_EPOCH)
-        .unwrap_or_default()
-        .as_nanos();
-    let tmp = parent.join(format!(".histcite-{}-{stamp}.tmp", std::process::id()));
-    let result = (|| {
-        let mut file = std::fs::OpenOptions::new()
-            .create_new(true)
-            .write(true)
-            .open(&tmp)
-            .map_err(|e| e.to_string())?;
-        file.write_all(bytes)
-            .and_then(|_| file.sync_all())
-            .map_err(|e| e.to_string())?;
-        std::fs::rename(&tmp, path).map_err(|e| e.to_string())
-    })();
-    if result.is_err() {
-        let _ = std::fs::remove_file(tmp);
-    }
-    result
+    crate::safety::atomic_write_protected(path, bytes, &[])
 }

@@ -13,6 +13,8 @@ cache = {}
 
 def fetch(url):
     if url not in cache:
+        # URLs are constructed below from fixed upstream HTTPS hosts, never user input.
+        # nosemgrep: python.lang.security.audit.dynamic-urllib-use-detected.dynamic-urllib-use-detected
         with urlopen(url, timeout=30) as response:
             cache[url] = response.read().decode('utf-8')
     return cache[url]

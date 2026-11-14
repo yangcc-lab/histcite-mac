@@ -103,6 +103,7 @@ impl Default for Settings {
 }
 impl Settings {
     pub fn validate(&self) -> Result<(), String> {
+        crate::safety::validate_json_depth(&self.graph_settings)?;
         if !(1..=100).contains(&self.beginning_years)
             || !(1..=100).contains(&self.ending_years)
             || !(1..=2000).contains(&self.record_page_size)

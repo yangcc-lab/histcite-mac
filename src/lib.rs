@@ -1,12 +1,12 @@
 use regex::Regex;
 use serde::{Deserialize, Serialize};
 use std::collections::{BTreeMap, BTreeSet, HashMap};
-use std::path::Path;
 use std::sync::LazyLock;
 use unicode_normalization::{UnicodeNormalization, char::is_combining_mark};
 pub mod analytics;
 pub mod collection;
 pub mod duplicates;
+pub mod safety;
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Record {
@@ -174,6 +174,7 @@ fn make_record(f: &Fields, source: &str, line: usize) -> Result<Record, String> 
 }
 
 pub fn parse_wos(text: &str, source: &str) -> Result<Vec<Record>, String> {
+    safety::check_text_size(text)?;
     let histcite = text.lines().any(|l| l.starts_with("MG HistCite"));
     let mut records = Vec::new();
     let mut current = Fields::new();
@@ -194,6 +195,9 @@ pub fn parse_wos(text: &str, source: &str) -> Result<Vec<Record>, String> {
                 return Err(format!("{source}:{}：ER 前沒有記錄", idx + 1));
             }
             if !(histcite && current.values().flatten().all(|s| s.trim().is_empty())) {
+                if records.len() >= safety::MAX_RECORDS {
+                    return Err("集合超過 100,000 篇文獻；請縮小集合".into());
+                }
                 records.push(make_record(&current, source, idx + 1)?);
             }
             current.clear();
@@ -231,6 +235,7 @@ pub fn parse_wos(text: &str, source: &str) -> Result<Vec<Record>, String> {
             "{source}：找不到 WoS 標記式純文字記錄，請匯出「全記錄與引用的參考文獻」TXT"
         ));
     }
+    safety::validate_records(&records)?;
     Ok(records)
 }
 
@@ -504,9 +509,10 @@ pub fn analyze_files_with_mode(paths: &[String], mode: MatchingMode) -> Result<A
     }
     let mut records = Vec::new();
     for path in paths {
-        let text = std::fs::read_to_string(Path::new(path))
+        let text = safety::read_text(std::path::Path::new(path))
             .map_err(|e| format!("無法讀取 {path}：{e}"))?;
         records.extend(parse_wos(&text, path)?);
     }
+    safety::validate_records(&records)?;
     Ok(analyze_with_mode(records, mode))
 }

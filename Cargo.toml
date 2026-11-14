@@ -1,6 +1,6 @@
 [package]
 name = "histcite-mac"
-version = "0.3.2"
+version = "0.3.3"
 edition = "2024"
 license = "MIT"
 description = "Local bibliometric analysis with familiar HistCite workflows"
@@ -18,4 +18,10 @@ serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 regex = "1"
 unicode-normalization = "0.1"
+
+[target.'cfg(unix)'.dependencies]
+rustix = { version = "1.1.6", features = ["fs"] }
+
+[lints.rust]
+unsafe_code = "forbid"
 

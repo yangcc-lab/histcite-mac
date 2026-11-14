@@ -1,6 +1,7 @@
 use histcite_core::{
     Analysis, MatchingMode,
     collection::{Collection, SavedGraph, Tag, atomic_write},
+    safety::{atomic_write_protected, read_text},
 };
 use serde::{Deserialize, Serialize};
 use serde_json::{Value, json};
@@ -69,6 +70,7 @@ fn persist(
         sources: sources.to_vec(),
         dirty,
     };
+    histcite_core::safety::check_serialized_size(&data)?;
     atomic_write(
         &recovery_path(app)?,
         &serde_json::to_vec(&data).map_err(|e| e.to_string())?,
@@ -96,7 +98,7 @@ impl Workspace {
         let c = self.collection.as_ref().ok_or("集合尚未載入")?;
         let mut v = serde_json::to_value(a).map_err(|e| e.to_string())?;
         v["collection"] = json!({"title":c.title,"description":c.description,"created":c.created,"comment":c.comment,"tags":c.tags,"graphs":c.graphs,"dirty":self.dirty,"save_path":self.path,"revision":self.revision,"network_pending":self.network_pending,"undo_count":self.undo.len(),"marks":self.marks,"log":self.log});
-        v["settings"] = serde_json::to_value(&c.settings).unwrap();
+        v["settings"] = serde_json::to_value(&c.settings).map_err(|e| e.to_string())?;
         Ok(v)
     }
     fn commit(
@@ -148,7 +150,7 @@ impl Workspace {
         let ids: BTreeSet<_> = self
             .collection
             .as_ref()
-            .unwrap()
+            .ok_or("集合尚未載入")?
             .records
             .iter()
             .map(|r| r.id.clone())
@@ -161,7 +163,7 @@ fn notify(app: &tauri::AppHandle, revision: u64) {
     let _ = app.emit("collection-changed", revision);
 }
 fn read_collection(path: &str) -> Result<Collection, String> {
-    let text = std::fs::read_to_string(path).map_err(|e| format!("無法讀取 {path}：{e}"))?;
+    let text = read_text(Path::new(path)).map_err(|e| format!("無法讀取 {path}：{e}"))?;
     Collection::from_text(&text, path)
 }
 #[tauri::command]
@@ -178,9 +180,11 @@ async fn initial_analysis(
         .filter(|p| [".txt", ".hci", ".hcm"].iter().any(|ext| p.ends_with(ext)))
         .collect();
     if paths.is_empty() {
-        if let Ok(bytes) = std::fs::read(recovery_path(&app)?) {
+        let recovery_file = recovery_path(&app)?;
+        if recovery_file.exists() {
+            let text = read_text(&recovery_file).map_err(|e| format!("無法讀取工作副本：{e}"))?;
             let recovery: Recovery =
-                serde_json::from_slice(&bytes).map_err(|e| format!("無法讀取工作副本：{e}"))?;
+                serde_json::from_str(&text).map_err(|e| format!("無法讀取工作副本：{e}"))?;
             if let Some(c) = &recovery.collection {
                 c.validate()?;
                 w.analysis = Some(c.analyze());
@@ -424,7 +428,7 @@ async fn mutate_collection(
     let defer = op == "rename" && operation["defer"].as_bool().unwrap_or(false);
     let previous_location = (w.path.clone(), w.sources.clone(), w.marks.clone());
     if op == "undo" {
-        let saved = w.undo.last().unwrap().clone();
+        let saved = w.undo.last().ok_or("沒有可復原的變更")?.clone();
         w.path = saved.path;
         w.sources = saved.sources;
         w.marks = saved.marks;
@@ -478,8 +482,8 @@ async fn save_collection(
             w.revision,
         )
     };
-    let path = if !save_as && previous.is_some() {
-        previous.unwrap()
+    let path = if let Some(previous) = previous.filter(|_| !save_as) {
+        previous
     } else {
         let picker = app.clone();
         let selected = tauri::async_runtime::spawn_blocking(move || {
@@ -502,9 +506,10 @@ async fn save_collection(
         return Err("儲存期間集合已變更；請再按一次儲存。".into());
     }
     protect_source(&w, &path)?;
-    atomic_write(
+    atomic_write_protected(
         &path,
-        &serde_json::to_vec_pretty(&c).map_err(|e| e.to_string())?,
+        &serde_json::to_vec(&c).map_err(|e| e.to_string())?,
+        &protected_sources(&w),
     )?;
     persist(&app, Some(&c), Some(&path), &w.sources, false)?;
     w.path = Some(path.clone());
@@ -525,6 +530,13 @@ fn protect_source(w: &Workspace, path: &Path) -> Result<(), String> {
         return Err("請另存新檔，保留原始 WoS／HCI 資料。".into());
     }
     Ok(())
+}
+fn protected_sources(w: &Workspace) -> Vec<PathBuf> {
+    w.sources
+        .iter()
+        .filter(|s| !s.ends_with(".hcm"))
+        .map(PathBuf::from)
+        .collect()
 }
 #[tauri::command]
 async fn save_export(
@@ -585,11 +597,12 @@ async fn save_export(
         return Ok(None);
     };
     let path = file.into_path().map_err(|e| e.to_string())?;
-    {
+    let sources = {
         let w = state.0.lock().map_err(|e| e.to_string())?;
         protect_source(&w, &path)?;
-    }
-    atomic_write(&path, &data)?;
+        protected_sources(&w)
+    };
+    atomic_write_protected(&path, &data, &sources)?;
     Ok(Some(path.to_string_lossy().to_string()))
 }
 #[tauri::command]
@@ -711,10 +724,16 @@ fn open_external(url: String) -> Result<(), String> {
     if !(url.starts_with("https://") || url.starts_with("http://")) || url.contains(['\n', '\r']) {
         return Err("無效網頁位址".into());
     }
-    std::process::Command::new("/usr/bin/open")
+    let mut child = std::process::Command::new("/usr/bin/open")
         .arg(&url)
         .spawn()
         .map_err(|e| e.to_string())?;
+    // Reap LaunchServices' short-lived helper without blocking the UI thread.
+    std::thread::spawn(move || {
+        if let Err(error) = child.wait() {
+            eprintln!("Unable to wait for browser helper: {error}");
+        }
+    });
     Ok(())
 }
 #[tauri::command]
@@ -771,7 +790,10 @@ async fn export_html(
         };
         atomic_write(&dir.join(name), text.as_bytes())?;
     }
-    atomic_write(&dir.join("Graphviz-source.zip"), include_bytes!("../../ui/Graphviz-source.zip"))?;
+    atomic_write(
+        &dir.join("Graphviz-source.zip"),
+        include_bytes!("../../ui/Graphviz-source.zip"),
+    )?;
     let text = format!(
         "window.__HISTCITE_EXPORT__={};",
         serde_json::to_string(&data).map_err(|e| e.to_string())?

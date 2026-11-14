@@ -24,7 +24,7 @@ const GraphLayout = (() => {
  }
  function buildGraph(data,numbers,selected,edges,s,dimensions={width:900,height:600},ordering={nodeBuckets:8,rankBuckets:8}) {
   const score=i=>s.score==='gcs'?(data.records[i].gcs||0):data.lcs[i];
-  const node=i=>'n'+(numbers.get(i)-1),max=Math.max(1,...selected.map(score));
+  const node=i=>'n'+(numbers.get(i)-1),max=selected.reduce((n,i)=>Math.max(n,score(i)),1);
   const byNumber=new Map(selected.map(i=>[String(numbers.get(i)-1),i]));
   const mapOrder=hashOrder(byNumber.keys(),ordering.nodeBuckets),inserted=new Set(),outgoing=new Map();
   if(s.links)for(const e of edges){if(!outgoing.has(e.cited))outgoing.set(e.cited,[]);outgoing.get(e.cited).push(e.citing);}
@@ -36,7 +36,7 @@ const GraphLayout = (() => {
   const month=i=>s.months?months[H.dateParts(data.records[i])[0]]:'';
   const rank=i=>String(data.records[i].year)+(month(i)||'');
   for(const i of ordered){const r=rank(i);if(!groups.has(r))groups.set(r,[]);groups.get(r).push(i);years.add(data.records[i].year);}
-  if(s.gaps){for(let y=Math.min(...years);y<=Math.max(...years);y++)years.add(y);}
+  if(s.gaps){const first=[...years].reduce((a,b)=>Math.min(a,b),Infinity),last=[...years].reduce((a,b)=>Math.max(a,b),-Infinity);for(let y=first;y<=last;y++)years.add(y);}
   const layers=[];for(const y of [...years].sort((a,b)=>a-b)){layers.push(String(y));if(s.months)for(const m of months.slice(1)){if(groups.has(y+m))layers.push(y+m);}}
   let dot='digraph test {\n';
   if(s.size==='window')dot+=`\tsize=${quote(number(Math.max(100,dimensions.width-20)/96)+','+number(Math.max(100,dimensions.height-25)/96))};\n`;
