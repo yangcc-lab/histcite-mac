@@ -8,7 +8,7 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 **從文獻匯入、資料整理到引用分析，主要操作均可在 Mac 本機完成，無須安裝 Windows、Wine 或額外的程式開發環境。**
 
-[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [English](README.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
+[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
@@ -122,6 +122,12 @@ Graph Maker 讓原本分散於多筆參考文獻清單中的引用資訊，成�
 **可以先用分析結果辨認問題與閱讀線索，再回到文獻內容及研究脈絡加以判斷。** 單憑引用連線，還無法說明一篇文獻的學術貢獻，或另一篇研究引用它的原因。
 
 ## 常見問題
+
+### HistCite 有 Mac 版嗎？
+
+**目前已有獨立開發的 HistCite Mac，可直接在 macOS 上執行。** 本專案參照 HistCite 12.03.17 的工作流程，提供本機引用分析與 Graph Maker，支援 macOS 13 以上；Apple Silicon 與 Intel Mac 使用同一份 Universal DMG，無須 Windows、Wine、CrossOver 或虛擬機。
+
+舊教學中的平台限制可能指原版 Windows HistCite 或 HistCite Pro。本專案是獨立實作，並非原作者推出的官方 Mac 版本。請從[最新版本頁面](https://github.com/yangnim21029/histcite-mac/releases/latest)下載，依前面的安裝步驟操作；目前發行版尚未經 Apple 公證，首次開啟方式也列在安裝說明中。
 
 ### 支援哪些輸入格式？
 

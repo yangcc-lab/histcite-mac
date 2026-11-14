@@ -8,7 +8,7 @@ HistCite Mac is an independently developed macOS bibliometric tool with a Rust a
 
 **Importing, organizing and analyzing your collection all happen locally on your Mac. No Windows, Wine or programming environment is needed.**
 
-[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [繁體中文](README.zh-TW.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
+[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open source
 
@@ -122,6 +122,12 @@ All views describe the collection you imported. Search criteria, database covera
 **Use the results to identify questions and reading paths, then examine the papers and their context.** A citation connection alone does not establish a paper's contribution or explain why another study cites it.
 
 ## Frequently asked questions
+
+### Is there a Mac version of HistCite?
+
+**HistCite Mac is available as an independent macOS app.** It follows HistCite 12.03.17 workflows and provides local citation analysis and Graph Maker on macOS 13 or later, with one Universal DMG for Apple Silicon and Intel Macs. It does not require Windows, Wine, CrossOver or a virtual machine.
+
+Older guides may describe the original Windows application or HistCite Pro. This project is a separate implementation, not an official macOS release from the original HistCite authors. [Download the Mac app](https://github.com/yangnim21029/histcite-mac/releases/latest) and follow the [installation steps](#start-in-three-steps), including the first-launch instructions for this unnotarized community build.
 
 ### Which input formats are supported?
 
