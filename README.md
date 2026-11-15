@@ -1,5 +1,7 @@
 # HistCite Mac
 
+**An independent macOS project by `yangnim21029`, not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
+
 **Organize Web of Science literature, analyze citation relationships, and explore how a research field develops — on your Mac.**
 
 After a Web of Science (WoS) search returns hundreds or thousands of records, citation relationships offer a useful starting point for reading. Which papers are frequently cited within the collection? How do later studies build on earlier work? Which authors, journals or topics deserve a closer look?
@@ -20,11 +22,13 @@ These badges show automated check results and repository practices. See the [rev
 
 See a native macOS demonstration of importing a WoS plain-text file, sorting by LCS and GCS, browsing authors, viewing a Historiograph and opening a record's details. The video uses 12 fictional records with 31 local citation links and includes English captions.
 
+The video demonstrates the interface, not compatibility with every current WoS export. See the [direct-import check and its limits](docs/compatibility.md#direct-import-check) for a separate check using two original research exports without external cleaning.
+
 https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
 [Download the MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
-HistCite Mac is an independent implementation by Ching-Cheng Yang. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
+HistCite Mac is an independent implementation by yangnim21029. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
 
 ## Start in three steps
 

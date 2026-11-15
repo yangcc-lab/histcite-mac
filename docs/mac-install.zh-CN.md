@@ -1,5 +1,7 @@
 # HistCite Mac 下载与安装
 
+**这是`yangnim21029`独立开发的 macOS 项目，并非原版 HistCite 的官方发行版。** 原版 HistCite 由 Eugene Garfield 及其合作团队开发；本项目与原团队没有隶属关系。[项目身份与原版贡献说明](project-identity.md#简体中文)。
+
 **HistCite Mac 可以直接在 macOS 上分析 Web of Science 文献、查看 LCS/GCS 引用指标，并用 Graph Maker 绘制引文关系图。** 软件免费开源，支持 macOS 13 Ventura 及以上版本，Apple Silicon 和 Intel Mac 使用同一份 Universal DMG。
 
 [下载最新 Mac 版本](https://github.com/yangnim21029/histcite-mac/releases/latest) · [繁體中文完整说明](../README.zh-TW.md) · [English](../README.md)
@@ -23,6 +25,8 @@
 打开 App，选择 **File → Open collection…**，载入导出的 `.txt` 文件；分批导出的文件可以一起选择。点击 **LCS** 查看文献在当前集合内的被引次数，再通过 **Tools → Graph Maker…** 绘制引用关系图。**GCS** 是 WoS 导出时记录的被引次数，导入后不会自动更新。
 
 安装包附有 `demo-wos.txt`，包含 12 篇虚构文献。可以先把它复制到 Mac 并导入，熟悉操作后再使用自己的研究数据。
+
+示范数据与视频用于展示操作，不代表所有当前 WoS 导出格式均已验证。另有两份未经外部清洗的原始研究导出文件通过直接导入检查；[已测范围与限制](compatibility.md#direct-import-check)单独列出结果。
 
 ![HistCite Mac 文献列表，使用虚构示范数据](images/records.png)
 
