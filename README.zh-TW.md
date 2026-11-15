@@ -1,5 +1,7 @@
 # HistCite Mac
 
+**這是楊景程（`yangnim21029`）獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
+
 **在 Mac 上整理 Web of Science 文獻、分析引用關係，從檢索結果中尋找研究領域的發展線索。**
 
 當研究者從 Web of Science（WoS）取得數百筆、甚至數千筆文獻後，除了逐篇閱讀，也可以透過引用關係了解這些研究如何相互連結：哪些文獻在資料集中經常被引用？不同時期的研究如何延續先前的成果？哪些作者、期刊或研究主題值得進一步關注？
@@ -19,6 +21,8 @@ macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 ## 60 秒看 HistCite Mac 實際操作
 
 在 macOS 原生程式中，示範匯入 WoS 純文字檔、依 LCS／GCS 排序、查看作者索引、引用關係圖與文獻詳情。影片使用 12 筆虛構文獻、31 條本地引用連線，附英文字幕。
+
+影片用來展示介面操作，不能證明所有目前的 WoS 匯出皆相容。另以兩份原始研究匯出檔、未經外部清洗進行的驗證，請見[直接匯入檢查與限制](docs/compatibility.md#direct-import-check)。
 
 https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 

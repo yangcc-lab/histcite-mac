@@ -19,6 +19,18 @@ The following checks were completed before the first public release:
 
 These results apply to the tested inputs and settings. They are not a guarantee of equivalence for every possible dataset or operation sequence. The reference research corpus and private capture environment are not redistributed. Public synthetic fixtures make the citation, reference-grouping and duplicate checks reproducible with `cargo test`.
 
+## Direct-import check
+
+On 2026-11-16, the shared Rust analysis core was run through the CLI against the two original WoS research exports used for the reference corpus. No external cleaning, tag reordering, field removal or encoding conversion was applied before import. File hashes matched the earlier source hashes before the run and remained unchanged afterward.
+
+The run read **1,217 records and 62,116 cited-reference entries**, producing **954 local citation links and no ambiguous matches** in the default Histcite mode. It also reported that 43 records' declared `NR` counts differed from their actual `CR` list lengths; citation links use the reference lists, while the original `NR` values are retained.
+
+The [parser](../src/lib.rs) reads two-character field tags and their continuation lines rather than requiring the sample file's exact field order. Original fields are retained in the working records. This does not mean every value, record type or encoding is supported: the current reader requires UTF-8 text, and records still need valid tags and record boundaries.
+
+This was a check of the CLI and shared analysis core, not a new recording of the native app or a fresh export session from the current WoS website. The 60-second video separately demonstrates native interaction with **fictional** records. Neither check establishes compatibility with every WoS export. The research exports are private and are not redistributed.
+
+**Interoperability with `hali-ux/histcite_citation-format-cleaner` has not been tested.** Its documented Windows ANSI (`mbcs`) output must not be assumed to work with this UTF-8 reader. For an import failure, report the app version and error message with a small, shareable sample that preserves the relevant tags and encoding; do not upload private research collections.
+
 ## Details that affect results
 
 - **Input:** use WoS tagged plain text with Full Record and Cited References. Missing reference lists are reported as incomplete data, not treated as evidence of no citations. Excel and native Scopus exports are not direct input formats.
