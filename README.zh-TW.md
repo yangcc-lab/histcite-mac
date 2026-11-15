@@ -1,6 +1,6 @@
 # HistCite Mac
 
-**這是楊景程（`yangnim21029`）獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
+**這是`yangnim21029`獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
 
 **在 Mac 上整理 Web of Science 文獻、分析引用關係，從檢索結果中尋找研究領域的發展線索。**
 
@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
 [下載 MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [英文字幕（SRT）](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
-HistCite Mac 由楊景程獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
+HistCite Mac 由yangnim21029獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
 
 ## 從文獻資料到引用關係：三步開始
 

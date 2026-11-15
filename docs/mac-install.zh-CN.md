@@ -1,6 +1,6 @@
 # HistCite Mac 下载与安装
 
-**这是杨景程（`yangnim21029`）独立开发的 macOS 项目，并非原版 HistCite 的官方发行版。** 原版 HistCite 由 Eugene Garfield 及其合作团队开发；本项目与原团队没有隶属关系。[项目身份与原版贡献说明](project-identity.md#简体中文)。
+**这是`yangnim21029`独立开发的 macOS 项目，并非原版 HistCite 的官方发行版。** 原版 HistCite 由 Eugene Garfield 及其合作团队开发；本项目与原团队没有隶属关系。[项目身份与原版贡献说明](project-identity.md#简体中文)。
 
 **HistCite Mac 可以直接在 macOS 上分析 Web of Science 文献、查看 LCS/GCS 引用指标，并用 Graph Maker 绘制引文关系图。** 软件免费开源，支持 macOS 13 Ventura 及以上版本，Apple Silicon 和 Intel Mac 使用同一份 Universal DMG。
 

@@ -1,6 +1,6 @@
 # HistCite Mac
 
-**An independent macOS project by Ching-Cheng Yang (`yangnim21029`), not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
+**An independent macOS project by `yangnim21029`, not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
 
 **Organize Web of Science literature, analyze citation relationships, and explore how a research field develops — on your Mac.**
 
@@ -28,7 +28,7 @@ https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
 [Download the MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
-HistCite Mac is an independent implementation by Ching-Cheng Yang. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
+HistCite Mac is an independent implementation by yangnim21029. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
 
 ## Start in three steps
 
