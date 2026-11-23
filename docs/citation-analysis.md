@@ -1,28 +1,26 @@
-# Your first citation analysis with HistCite Mac
+# Analyze a Web of Science export with HistCite Mac
 
 [繁體中文](citation-analysis.zh-TW.md)
 
-Start with a small collection, check which papers cite a particular record, then draw a graph of those relationships. The lesson uses **12 fictional records** and the English menus in HistCite Mac v0.3.4. You can complete it without a Web of Science account.
+Use the records from your own Web of Science search to find which papers cite a particular work and draw a graph of those relationships. The steps use the English menus in HistCite Mac v0.3.4.
 
-## Open the sample collection
+In a [direct-import check](compatibility.md#direct-import-check), the shared analysis core read two original Web of Science exports without external cleaning. It processed **1,217 records** and **62,116 cited-reference entries**, producing **954 links within the collection**.
 
-Install the app using the [Mac installation instructions](../README.md#1-download-and-install). Copy `demo-wos.txt` from the disk image, or [download the same sample](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/demo-wos.txt). In HistCite Mac, choose **File → Open collection…** and select the file. The collection shows **12 records and 31 citation links**.
+## Export and open your collection
+
+1. In the Web of Science results, choose **Export → Plain Text File** and select **Full Record and Cited References** for the record content. Keep the original `.txt` files and record your search terms, database selection and export date. [Web of Science export options](https://webofscience.zendesk.com/hc/en-us/articles/20135124532113-Search-Results).
+2. Follow the [Mac installation instructions](../README.md#1-download-and-install). Choose **File → Open collection…** and select the file or files you exported.
+3. Open **Tools → Data checks** to review import warnings and record merges before interpreting the results.
 
 ## Trace a citation back to its source
 
-1. Click the **LCS** column to sort by citations received within the collection. Find *Starting a literature map* (Avery, 2011). Its **LCS is 5** and its **GCS is 120**. Five records in this collection cite Avery. The sample's GCS is a simulated database count, which represents a separate scope.
-2. Click the record number beside Avery's title to open its details. Under **Citing records**, find *Finding connections between papers* (Bennett, 2012).
-3. Expand **Match evidence** beneath Bennett's entry. You should see `histcite_key: Avery A, 2011, DEMO J RES, V1, P1`. This line shows the matching method and the reference text imported with Bennett's record.
+1. Click the **LCS** column and choose a record with a positive score. LCS counts records in your collection that cite the selected work. **GCS** reflects the citation count supplied by Web of Science at export.
+2. Click the record number beside the title. Under **Citing records**, choose one of the entries and expand its **Match evidence**. You can see the matching method and the reference text from the citing record.
+3. If all local scores are zero, check for missing reference lists in **Data checks**. The papers in a collection may also have no direct citation links to each other.
 
 ## Draw the citation graph
 
-Return to the main window and choose **Tools → Graph Maker…**. The graph opens with the sample records arranged by publication year. Hover over a node to read its details, or click it to open the record. Look for Avery and Bennett at the early end of the timeline. Use **SVG** in the graph window if you want to save the figure.
-
-![Graph Maker showing the fictional sample collection](images/graph.png)
-
-## Continue with your own search
-
-Export your Web of Science results as **Plain Text** with **Full Record and Cited References**. Keep the original files and record your search terms, database selection, export date and app version. Use **Tools → Data checks** to review import warnings and record merges before interpreting the graph. LCS depends on the records you include, while GCS reflects the count in the original export. Read the linked papers to understand why one work cites another.
+Return to the main window and choose **Tools → Graph Maker…**. The graph arranges its selected records by publication year. Hover over a node to see its details or click it to open the record. Choose **SVG** in the graph window to save the figure. If you use the graph in a report, record the app version, the search behind the collection and the settings you used to select the plotted records.
 
 ## Research and further reading
 

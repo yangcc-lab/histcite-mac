@@ -14,7 +14,7 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
-- **想用 HistCite Mac 做研究？** 從[引文分析教學](docs/citation-analysis.zh-TW.md)開始，試著追查一條引用並畫出引用圖。教學也附上原版 HistCite 的方法論文。
+- **想用 HistCite Mac 做研究？** 跟著[引文分析教學](docs/citation-analysis.zh-TW.md)匯入自己的 Web of Science 資料、追查引用並畫出引用圖。也可查看[兩份 WoS 原始匯出檔的直接匯入驗證](docs/compatibility.md#direct-import-check)。
 - **想了解程式怎麼實作？** 看[一條參考文獻如何成為引用連線](docs/citation-matching.md#繁體中文)，或從[開發指南](docs/development.md)開始建置、測試或參與開發。
 
 [![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)

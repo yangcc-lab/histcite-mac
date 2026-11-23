@@ -1,28 +1,26 @@
-# 用 HistCite Mac 做第一次引文分析
+# 用 HistCite Mac 分析 Web of Science 匯出資料
 
 [English](citation-analysis.md)
 
-先用小型文獻集合找出哪些文獻引用了同一篇文章，再把這些關係畫成圖。本教學使用 **12 筆虛構文獻**，並保留 HistCite Mac v0.3.4 的英文選單名稱。跟著操作不需要 Web of Science 帳號。
+用自己從 Web of Science（WoS）匯出的資料，找出哪些文獻引用了同一篇文章，再把引用關係畫成圖。以下沿用 HistCite Mac v0.3.4 的英文選單名稱。
 
-## 開啟範例集合
+我們曾將兩份 Web of Science 原始匯出檔直接交給分析核心，未經外部清洗。這次驗證讀入 **1,217 筆文獻**和 **62,116 筆參考文獻條目**，建立 **954 條集合內引用連線**。[直接匯入驗證](compatibility.md#direct-import-check)。
 
-依照 [Mac 安裝說明](../README.zh-TW.md#1-下載並安裝)裝好程式後，從磁碟映像檔複製 `demo-wos.txt`，或[直接下載同一份範例](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/demo-wos.txt)。在程式中選擇 **File → Open collection…**，開啟範例。集合會顯示 **12 筆文獻、31 條引用連線**。
+## 匯出並開啟文獻集合
+
+1. 在 Web of Science 的檢索結果頁選擇 **Export → Plain Text File**，紀錄內容選 **Full Record and Cited References**。保留原始 `.txt` 檔案，記下檢索詞、所選資料庫和匯出日期。[Web of Science 匯出選項](https://webofscience.zendesk.com/hc/en-us/articles/20135124532113-Search-Results)。
+2. 依照 [Mac 安裝說明](../README.zh-TW.md#1-下載並安裝)裝好程式，選擇 **File → Open collection…**，開啟一個或多個匯出檔。
+3. 解讀結果前，先到 **Tools → Data checks** 查看匯入警告和文獻合併紀錄。
 
 ## 找出一條引用的來源
 
-1. 點選 **LCS** 欄位，按文獻在集合內的被引用次數排序。找到 Avery 在 2011 年發表的範例文獻 *Starting a literature map*，它的 **LCS 為 5**、**GCS 為 120**。集合中有五筆文獻引用 Avery。範例的 GCS 則是模擬資料庫所記錄的引用次數，計算範圍不同。
-2. 點標題旁的文獻編號，開啟 Avery 的文獻詳情。從 **Citing records** 找到 Bennett 在 2012 年發表的範例文獻 *Finding connections between papers*。
-3. 展開 Bennett 下方的 **Match evidence**，應會看到 `histcite_key: Avery A, 2011, DEMO J RES, V1, P1`。這一行列出比對方式，以及匯入 Bennett 那筆資料時讀到的參考文獻原文。
+1. 點選 **LCS** 欄位排序，找一筆 LCS 大於 0 的文獻。LCS 代表目前集合裡有幾篇文獻引用它。**GCS** 則沿用 Web of Science 匯出當時所記錄的被引用次數。
+2. 點標題旁的文獻編號，開啟文獻詳情。從 **Citing records** 找到一篇引用它的文獻，展開該筆下方的 **Match evidence**，查看比對方式與參考文獻原文。
+3. 如果所有文獻的 LCS 都是 0，可回到 **Data checks** 查看是否缺少參考文獻清單。集合中的文獻也可能沒有彼此引用。
 
 ## 畫出引用關係圖
 
-回到主視窗，選擇 **Tools → Graph Maker…**。圖上會依出版年排列範例文獻。把游標移到節點上可查看文獻資訊，點選節點可開啟文獻詳情。試著在時間軸較早的位置找出 Avery 和 Bennett。如果要儲存圖片，在圖形視窗按 **SVG**。
-
-![Graph Maker 繪出的虛構範例文獻引用圖](images/graph.png)
-
-## 換成自己的研究資料
-
-從 Web of Science 匯出檢索結果時，選擇 **Plain Text** 和 **Full Record and Cited References**。保留原始檔案，並記下檢索詞、所選資料庫、匯出日期和 App 版本。解讀引用圖前，可以先到 **Tools → Data checks** 查看匯入警告和合併紀錄。LCS 會隨納入集合的文獻改變，GCS 則沿用原始匯出檔的數值。想了解一篇文獻為什麼引用另一篇，仍要回到原文閱讀。
+回到主視窗，選擇 **Tools → Graph Maker…**。圖上會依出版年排列納入圖中的文獻。把游標移到節點上可查看資訊，點選節點可開啟文獻詳情。要儲存圖片，在圖形視窗按 **SVG**。若要把圖用在研究報告，請記下 App 版本、建立集合的檢索條件，以及圖上文獻的篩選設定。
 
 ## 研究文獻與延伸閱讀
 
