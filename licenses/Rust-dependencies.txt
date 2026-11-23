@@ -4324,10 +4324,10 @@ limitations under the License.
 
 
 ========================================================================
-cookie 0.18.2
+cookie 0.18.3
 License: MIT OR Apache-2.0
 Authors: Sergio Benitez <sb@sergio.bz>; Alex Crichton <alex@alexcrichton.com>
-Source: https://crates.io/api/v1/crates/cookie/0.18.2/download
+Source: https://crates.io/api/v1/crates/cookie/0.18.3/download
 
 --- LICENSE-APACHE ---
                               Apache License
@@ -13670,10 +13670,10 @@ SOFTWARE.
 
 
 ========================================================================
-form_urlencoded 1.2.2
+form_urlencoded 1.2.3
 License: MIT OR Apache-2.0
 Authors: The rust-url developers
-Source: https://crates.io/api/v1/crates/form_urlencoded/1.2.2/download
+Source: https://crates.io/api/v1/crates/form_urlencoded/1.2.3/download
 
 --- LICENSE-APACHE ---
                               Apache License
@@ -39323,10 +39323,10 @@ authorization of the copyright holder.
 
 
 ========================================================================
-url 2.5.8
+url 2.5.9
 License: MIT OR Apache-2.0
 Authors: The rust-url developers
-Source: https://crates.io/api/v1/crates/url/2.5.8/download
+Source: https://crates.io/api/v1/crates/url/2.5.9/download
 
 --- LICENSE-APACHE ---
                               Apache License
