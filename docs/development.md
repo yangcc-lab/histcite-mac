@@ -2,6 +2,12 @@
 
 The [Mac download](https://github.com/yangnim21029/histcite-mac/releases/latest) is the recommended installation for researchers. This guide is for contributors and source builds.
 
+## Contribute a fix or improvement
+
+- If you found a problem, use the [reporting guide](../README.md#report-a-problem-or-contribute) to describe the app version, steps and expected result in a GitHub issue. Corrections to the [tutorial](citation-analysis.md) are welcome too.
+- For a citation matching change, read [how a reference becomes a citation link](citation-matching.md) and look at the [existing test fixtures](../tests/fixtures/README.md). Use a small fictional example to show the expected behavior, then run `cargo test --locked`.
+- In a pull request, link the issue if there is one and explain how you checked the fix. When writing a release note, describe the affected workflow so researchers can tell whether the change matters to their work.
+
 ## Build the Mac app
 
 Use macOS 13 or later, Xcode Command Line Tools, Rust 1.99.1 or later (edition 2024), and Python 3.9 or later. The UI has no npm build step. The offline layout engine is already included.
