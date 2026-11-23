@@ -2,7 +2,7 @@
 
 [繁體中文](citation-analysis.zh-TW.md)
 
-Use the records from your own Web of Science search to find which papers cite a particular work and draw a graph of those relationships. The steps use the English menus in HistCite Mac v0.3.4.
+Use the records from your own Web of Science search to find which papers cite a particular work and draw a graph of those relationships. The steps use the English menus in HistCite Mac v0.3.5.
 
 In a [direct-import check](compatibility.md#direct-import-check), the shared analysis core read two original Web of Science exports without external cleaning. It processed **1,217 records** and **62,116 cited-reference entries**, producing **954 links within the collection**.
 

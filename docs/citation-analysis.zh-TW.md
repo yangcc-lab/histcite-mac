@@ -2,7 +2,7 @@
 
 [English](citation-analysis.md)
 
-用自己從 Web of Science（WoS）匯出的資料，找出哪些文獻引用了同一篇文章，再把引用關係畫成圖。以下沿用 HistCite Mac v0.3.4 的英文選單名稱。
+用自己從 Web of Science（WoS）匯出的資料，找出哪些文獻引用了同一篇文章，再把引用關係畫成圖。以下沿用 HistCite Mac v0.3.5 的英文選單名稱。
 
 我們曾將兩份 Web of Science 原始匯出檔直接交給分析核心，未經外部清洗。這次驗證讀入 **1,217 筆文獻**和 **62,116 筆參考文獻條目**，建立 **954 條集合內引用連線**。[直接匯入驗證](compatibility.md#direct-import-check)。
 

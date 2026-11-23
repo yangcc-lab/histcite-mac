@@ -29,7 +29,7 @@ dependencies = [
 
 [[package]]
 name = "histcite-mac"
-version = "0.3.4"
+version = "0.3.5"
 dependencies = [
  "regex",
  "rustix",
