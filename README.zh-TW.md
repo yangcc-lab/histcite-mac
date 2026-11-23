@@ -2,7 +2,7 @@
 
 **這是`yangnim21029`獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
 
-**在 Mac 上整理 Web of Science 文獻、分析引用關係，從檢索結果中尋找研究領域的發展線索。**
+**HistCite Mac 是免費開源的 Mac 原生引文分析工具，可匯入 Web of Science 文獻、分析 LCS／GCS，並繪製引用關係圖。**
 
 當研究者從 Web of Science（WoS）取得數百筆、甚至數千筆文獻後，除了逐篇閱讀，也可以透過引用關係了解這些研究如何相互連結：哪些文獻在資料集中經常被引用？不同時期的研究如何延續先前的成果？哪些作者、期刊或研究主題值得進一步關注？
 
@@ -10,13 +10,21 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 **從文獻匯入、資料整理到引用分析，主要操作均可在 Mac 本機完成，無須安裝 Windows、Wine 或額外的程式開發環境。**
 
-[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [60 秒操作示範](#60-秒看-histcite-mac-實際操作) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
+[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [專案網站](https://yangnim21029.github.io/histcite-mac/zh-TW/) · [60 秒操作示範](#60-秒看-histcite-mac-實際操作) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
 [![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
 
 徽章顯示自動檢查結果與專案維護評分，並非資安認證。[檢查範圍與已知限制](docs/security-review.md)包含舊版 Graphviz 尚待完成的審查。
+
+## 社群收錄與介紹
+
+[![已收錄於 Awesome Mac](docs/images/listed-awesome-mac.svg)](https://wangchujiang.com/awesome-mac/README-zh.html)
+
+感謝 [jaywcjlove／小弟调调](https://x.com/jaywcjlove/status/2121782872545837467) 將 HistCite Mac 收錄至 Awesome Mac，並分享操作示範。
+
+也感謝 [RefTools](https://github.com/specter119/RefTools/blob/master/histcite/README.md)、[Awesome Scholarly Data Analysis](https://github.com/napsternxg/awesome-scholarly-data-analysis#readme) 收錄專案，以及[綠軟下載](https://lvruan.com/app/6675)、[小狼成長實驗室](https://ddw2019.com/153/#i-32) 撰文介紹。
 
 ## 60 秒看 HistCite Mac 實際操作
 

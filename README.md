@@ -2,7 +2,7 @@
 
 **An independent macOS project by `yangnim21029`, not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
 
-**Organize Web of Science literature, analyze citation relationships, and explore how a research field develops — on your Mac.**
+**HistCite Mac is a free, native macOS app for Web of Science citation analysis and visualization.**
 
 After a Web of Science (WoS) search returns hundreds or thousands of records, citation relationships offer a useful starting point for reading. Which papers are frequently cited within the collection? How do later studies build on earlier work? Which authors, journals or topics deserve a closer look?
 
@@ -10,13 +10,21 @@ HistCite Mac is an independently developed macOS bibliometric tool with a Rust a
 
 **Importing, organizing and analyzing your collection all happen locally on your Mac. No Windows, Wine or programming environment is needed.**
 
-[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [Watch the demo](#watch-histcite-mac-in-60-seconds) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
+[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [Project website](https://yangnim21029.github.io/histcite-mac/) · [Watch the demo](#watch-histcite-mac-in-60-seconds) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
 
 macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open source
 
 [![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
 
 These badges show automated check results and repository practices. See the [review scope and known limitations](docs/security-review.md), including the legacy Graphviz engine; they are not security certification.
+
+## Community mentions
+
+[![Listed in Awesome Mac](docs/images/listed-awesome-mac.svg)](https://github.com/jaywcjlove/awesome-mac#readme)
+
+Thank you to [jaywcjlove](https://x.com/jaywcjlove/status/2121782872545837467) for including HistCite Mac in Awesome Mac and sharing the demo.
+
+Thanks also to [RefTools](https://github.com/specter119/RefTools/blob/master/histcite/README.md) and [Awesome Scholarly Data Analysis](https://github.com/napsternxg/awesome-scholarly-data-analysis#readme) for listing the project, and to [绿软下载](https://lvruan.com/app/6675) and [小狼成长实验室](https://ddw2019.com/153/#i-32) for introducing it to their readers.
 
 ## Watch HistCite Mac in 60 seconds
 
