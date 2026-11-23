@@ -42,11 +42,49 @@
       <div><h3>追蹤研究如何發展</h3><p>使用 Graph Maker 查看論文之間的引用連結，並開啟單篇文獻，閱讀摘要、參考文獻與書目資料。</p></div>
       <div><h3>資料留在你的 Mac</h3><p>依作者、期刊或年份分析文獻，儲存工作集合，再匯出表格與圖形。文獻資料在本機處理。</p></div>
     </div></section>
-    <section class="section" id="install"><h2>準備 WoS 資料，開始分析</h2><ol class="steps">
-      <li><strong>安裝程式。</strong>下載 Universal DMG，將 HistCite Mac 拖入 Applications。Apple Silicon 與 Intel 使用同一份安裝檔。</li>
-      <li><strong>匯出文獻。</strong>在 Web of Science 選擇 <strong>Plain Text</strong>，內容選 <strong>Full Record and Cited References</strong>，並保留原始檔案。</li>
-      <li><strong>開啟集合。</strong>在程式選擇 <strong>File → Open collection…</strong>，依 LCS 或 GCS 排序，再使用 <strong>Tools → Graph Maker…</strong> 繪圖。</li>
-    </ol><p>也可以先用隨附的 <a href="https://github.com/yangnim21029/histcite-mac/blob/main/examples/demo-wos.txt">12 筆虛構示範資料</a>熟悉操作。</p><div class="notice"><p><strong>首次啟動：</strong>社群版本尚未經 Apple 公證。若 macOS 阻擋開啟，請確認下載來源，再依<a href="https://github.com/yangnim21029/histcite-mac/blob/main/README.zh-TW.md#1-下載並安裝">安裝說明</a>操作。</p></div></section>
+    <section class="section" id="install" aria-labelledby="install-heading">
+      <h2 id="install-heading">準備 WoS 資料，開始分析</h2>
+      <div class="install-guide">
+        <ol class="steps" role="list">
+          <li>
+            <span class="step-number" aria-hidden="true">1</span>
+            <div class="step-content">
+              <h3>安裝程式</h3>
+              <p><a href="https://github.com/yangnim21029/histcite-mac/releases/latest">下載 Universal DMG</a>，將 HistCite Mac 拖入 Applications。</p>
+              <p class="step-detail">Apple Silicon 與 Intel 使用同一份安裝檔。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">2</span>
+            <div class="step-content">
+              <h3>匯出文獻</h3>
+              <p>在 Web of Science 使用以下匯出設定：</p>
+              <dl class="step-settings">
+                <div><dt>格式</dt><dd>Plain Text</dd></div>
+                <div><dt>內容</dt><dd>Full Record and Cited References</dd></div>
+              </dl>
+              <p class="step-detail">請保留原始匯出檔案。</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">3</span>
+            <div class="step-content">
+              <h3>開啟集合，開始分析</h3>
+              <dl class="step-settings">
+                <div><dt>開啟</dt><dd>File → Open collection…</dd></div>
+                <div><dt>排序依據</dt><dd>LCS 或 GCS</dd></div>
+                <div><dt>繪圖</dt><dd>Tools → Graph Maker…</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ol>
+        <p class="demo-link">也可以先用 <a href="https://github.com/yangnim21029/histcite-mac/blob/main/examples/demo-wos.txt">12 筆虛構示範資料</a>熟悉操作。</p>
+        <aside class="install-note" aria-labelledby="launch-heading">
+          <h3 id="launch-heading">首次在 macOS 啟動</h3>
+          <p>社群版本尚未經 Apple 公證。若 macOS 阻擋開啟，請確認下載來源，再依<a href="https://github.com/yangnim21029/histcite-mac/blob/main/README.zh-TW.md#1-下載並安裝">安裝說明</a>操作。</p>
+        </aside>
+      </div>
+    </section>
     <section class="section" id="faq"><h2>HistCite Mac 版常見問題</h2>
       <details open><summary>HistCite 有原生 Mac 版嗎？</summary><p>HistCite Mac 是 yangnim21029 獨立開發的原生 macOS 實作，參照 HistCite 的主要工作流程，無須 Windows、Wine、CrossOver 或虛擬機。它與原版 Windows HistCite、HistCite Pro 是不同專案。</p></details>
       <details><summary>這是原 HistCite 團隊發布的官方版本嗎？</summary><p>不是。原版 HistCite 的貢獻歸於 Eugene Garfield 與合作團隊；本專案與原團隊沒有隸屬關係，也不包含原版 HistCite 的程式碼或執行檔。</p></details>

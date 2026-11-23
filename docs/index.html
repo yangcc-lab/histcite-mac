@@ -41,11 +41,49 @@
       <div><h3>Follow research over time</h3><p>Use Graph Maker to see which papers cite one another. Open a record to read its abstract, references and bibliographic details.</p></div>
       <div><h3>Keep analysis on your Mac</h3><p>Group records by author, journal or year, save your collection, and export tables or graphs. Literature data stays on your computer.</p></div>
     </div></section>
-    <section class="section" id="install"><h2>Start with a WoS export</h2><ol class="steps">
-      <li><strong>Install the app.</strong> Download the Universal DMG and drag HistCite Mac into Applications. The same download supports Apple Silicon and Intel.</li>
-      <li><strong>Export your records.</strong> In Web of Science, choose <strong>Plain Text</strong> and <strong>Full Record and Cited References</strong>. Keep your original files.</li>
-      <li><strong>Open your collection.</strong> Choose <strong>File → Open collection…</strong>. Sort by LCS or GCS, then use <strong>Tools → Graph Maker…</strong> to draw a graph.</li>
-    </ol><p>Try the included <a href="https://github.com/yangnim21029/histcite-mac/blob/main/examples/demo-wos.txt">12-record fictional dataset</a> before using research data.</p><div class="notice"><p><strong>First launch:</strong> the community build is not Apple-notarized. If macOS blocks it, follow the <a href="https://github.com/yangnim21029/histcite-mac#1-download-and-install">installation instructions</a> after confirming the download source.</p></div></section>
+    <section class="section" id="install" aria-labelledby="install-heading">
+      <h2 id="install-heading">Start with a WoS export</h2>
+      <div class="install-guide">
+        <ol class="steps" role="list">
+          <li>
+            <span class="step-number" aria-hidden="true">1</span>
+            <div class="step-content">
+              <h3>Install the app</h3>
+              <p><a href="https://github.com/yangnim21029/histcite-mac/releases/latest">Download the Universal DMG</a>, then drag HistCite Mac into Applications.</p>
+              <p class="step-detail">One download for Apple Silicon and Intel.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">2</span>
+            <div class="step-content">
+              <h3>Export your records</h3>
+              <p>In Web of Science, use these export options:</p>
+              <dl class="step-settings">
+                <div><dt>Format</dt><dd>Plain Text</dd></div>
+                <div><dt>Include</dt><dd>Full Record and Cited References</dd></div>
+              </dl>
+              <p class="step-detail">Keep your original export files.</p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number" aria-hidden="true">3</span>
+            <div class="step-content">
+              <h3>Open your collection</h3>
+              <dl class="step-settings">
+                <div><dt>Open</dt><dd>File → Open collection…</dd></div>
+                <div><dt>Sort by</dt><dd>LCS or GCS</dd></div>
+                <div><dt>Graph</dt><dd>Tools → Graph Maker…</dd></div>
+              </dl>
+            </div>
+          </li>
+        </ol>
+        <p class="demo-link">Try the <a href="https://github.com/yangnim21029/histcite-mac/blob/main/examples/demo-wos.txt">12-record fictional dataset</a> before using research data.</p>
+        <aside class="install-note" aria-labelledby="launch-heading">
+          <h3 id="launch-heading">First launch on macOS</h3>
+          <p>This community build is not Apple-notarized. If macOS blocks it, confirm the download source and follow the <a href="https://github.com/yangnim21029/histcite-mac#1-download-and-install">installation instructions</a>.</p>
+        </aside>
+      </div>
+    </section>
     <section class="section" id="faq"><h2>HistCite on Mac: common questions</h2>
       <details open><summary>Is there a native Mac version of HistCite?</summary><p>HistCite Mac is an independent native macOS implementation by yangnim21029. It follows HistCite workflows and runs without Windows, Wine, CrossOver or a virtual machine. It is separate from the original Windows HistCite and HistCite Pro.</p></details>
       <details><summary>Is this an official release from the original HistCite team?</summary><p>No. Credit for the original HistCite belongs to Eugene Garfield and collaborators. This independent project is not affiliated with that team and does not contain the original HistCite program code or executable.</p></details>
