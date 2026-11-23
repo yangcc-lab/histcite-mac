@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="64" viewBox="0 0 264 64" role="img" aria-labelledby="title desc">
+  <title id="title">Listed in Awesome Mac</title>
+  <desc id="desc">Community software listing. Open the link to view the list.</desc>
+  <rect x="0.5" y="0.5" width="263" height="63" rx="8" fill="#edf4fb" stroke="#bdd0e2"/>
+  <path d="M22 39 34 22 46 39M22 39h24" fill="none" stroke="#527ca1" stroke-width="1.5"/>
+  <g fill="#155e9a"><circle cx="22" cy="39" r="4"/><circle cx="34" cy="22" r="4"/><circle cx="46" cy="39" r="4"/></g>
+  <g font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">
+    <text x="64" y="23" font-size="12" fill="#435a70">Listed in</text>
+    <text x="64" y="46" font-size="21" font-weight="600" fill="#173c5c">Awesome Mac</text>
+  </g>
+</svg>
