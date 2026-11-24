@@ -2,7 +2,7 @@
 
 This is an AI-assisted review and reproducible automated checks. It is **not a certification, a complete security audit, or an audit performed by Trail of Bits**. Badges link to live evidence and may change as dependencies, rules and code change.
 
-Baseline: [`ad20431`](https://github.com/yangnim21029/histcite-mac/commit/ad204319a7e382feb8a6e5d9421c512d414284ca). Application fixes: [`2000de4`](https://github.com/yangnim21029/histcite-mac/commit/2000de4), version 0.3.3. Version **0.3.4** ([application changes](https://github.com/yangnim21029/histcite-mac/commit/03327f2)) follows up with bounded background work, notification recovery and Graphviz warning triage. The checks below were rerun after remediation.
+Baseline: [`ad20431`](https://github.com/yangcc-lab/histcite-mac/commit/ad204319a7e382feb8a6e5d9421c512d414284ca). Application fixes: [`2000de4`](https://github.com/yangcc-lab/histcite-mac/commit/2000de4), version 0.3.3. Version **0.3.4** ([application changes](https://github.com/yangcc-lab/histcite-mac/commit/03327f2)) follows up with bounded background work, notification recovery and Graphviz warning triage. The checks below were rerun after remediation.
 
 ## What the badges cover
 
@@ -14,9 +14,9 @@ Baseline: [`ad20431`](https://github.com/yangnim21029/histcite-mac/commit/ad2043
 | Gitleaks 8.30.1 | Full available Git history; zero detected secrets. Reports are redacted. Ignored private working files are outside this scan. |
 | OpenSSF Scorecard | Repository practices, published by the official action. See the live score and individual checks; a score does not prove that the application has no vulnerabilities. |
 
-[Scanner runs and artifacts](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) · [Scorecard runs](https://github.com/yangnim21029/histcite-mac/actions/workflows/scorecard.yml)
+[Scanner runs and artifacts](https://github.com/yangcc-lab/histcite-mac/actions/workflows/security.yml) · [Scorecard runs](https://github.com/yangcc-lab/histcite-mac/actions/workflows/scorecard.yml)
 
-Source findings, scanner failures and parsing failures fail the check. Workflow artifacts retain logs and JSON for 30 days. The badge describes the latest workflow on `main`; it does not attest to an arbitrary downloaded binary. Rust tests and Mac builds run in the separate [Checks workflow](https://github.com/yangnim21029/histcite-mac/actions/workflows/checks.yml).
+Source findings, scanner failures and parsing failures fail the check. Workflow artifacts retain logs and JSON for 30 days. The badge describes the latest workflow on `main`; it does not attest to an arbitrary downloaded binary. Rust tests and Mac builds run in the separate [Checks workflow](https://github.com/yangcc-lab/histcite-mac/actions/workflows/checks.yml).
 
 ## AI review coverage
 

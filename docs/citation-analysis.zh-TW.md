@@ -26,4 +26,4 @@
 
 - Eugene Garfield 在 2004 年的論文中說明，原版 HistCite 如何以 Web of Science 匯出資料繪製按時間排列的引文圖譜。[Historiographic Mapping of Knowledge Domains Literature](https://journals.sagepub.com/doi/10.1177/0165551504042802)。
 - 賓州大學的典藏收錄了原版 HistCite 的方法論文及應用案例。[Papers on Algorithmic Historiography](https://garfield.library.upenn.edu/algorithmichistoriographyhistcite.html)。
-- 想進一步了解 Mac 版，可看[檢查結果與相容性限制](compatibility.md)，以及[引用比對的實作說明](citation-matching.md#繁體中文)。HistCite Mac 由 `yangnim21029` 獨立開發，參照 Eugene Garfield 與合作團隊開發的原版 HistCite 工作流程。
+- 想進一步了解 Mac 版，可看[檢查結果與相容性限制](compatibility.md)，以及[引用比對的實作說明](citation-matching.md#繁體中文)。HistCite Mac 由 `yangcc-lab` 獨立開發，參照 Eugene Garfield 與合作團隊開發的原版 HistCite 工作流程。
