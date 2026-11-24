@@ -1,10 +1,10 @@
 # HistCite Mac 下载与安装
 
-**这是`yangnim21029`独立开发的 macOS 项目，并非原版 HistCite 的官方发行版。** 原版 HistCite 由 Eugene Garfield 及其合作团队开发；本项目与原团队没有隶属关系。[项目身份与原版贡献说明](project-identity.md#简体中文)。
+**这是`yangcc-lab`独立开发的 macOS 项目，并非原版 HistCite 的官方发行版。** 原版 HistCite 由 Eugene Garfield 及其合作团队开发；本项目与原团队没有隶属关系。[项目身份与原版贡献说明](project-identity.md#简体中文)。
 
 **HistCite Mac 可以直接在 macOS 上分析 Web of Science 文献、查看 LCS/GCS 引用指标，并用 Graph Maker 绘制引文关系图。** 软件免费开源，支持 macOS 13 Ventura 及以上版本，Apple Silicon 和 Intel Mac 使用同一份 Universal DMG。
 
-[下载最新 Mac 版本](https://github.com/yangnim21029/histcite-mac/releases/latest) · [繁體中文完整说明](../README.zh-TW.md) · [English](../README.md)
+[下载最新 Mac 版本](https://github.com/yangcc-lab/histcite-mac/releases/latest) · [繁體中文完整说明](../README.zh-TW.md) · [English](../README.md)
 
 ## HistCite 有 Mac 版吗？
 
@@ -14,7 +14,7 @@
 
 ## 下载安装
 
-1. 打开[项目发布页](https://github.com/yangnim21029/histcite-mac/releases/latest)，在 **Assets** 中下载文件名以 `universal.dmg` 结尾的安装包。`Source code` 是源代码，不是安装包。
+1. 打开[项目发布页](https://github.com/yangcc-lab/histcite-mac/releases/latest)，在 **Assets** 中下载文件名以 `universal.dmg` 结尾的安装包。`Source code` 是源代码，不是安装包。
 2. 打开 DMG，将 **HistCite Mac** 拖进 **Applications（应用程序）**文件夹，再从应用程序打开。
 3. 当前社区发行版尚未经过 Apple 公证。如果 macOS 阻止打开，请先确认文件来自本项目的发布页，再按 [Apple 的说明](https://support.apple.com/zh-cn/102445)，在 **系统设置 → 隐私与安全性 → 仍要打开（Open Anyway）**中为这个 App 建立例外。这不表示 Apple 已验证其安全性。
 
@@ -38,4 +38,4 @@
 
 原生 Scopus 导出文件和一般 Excel 文件需要先转换为兼容的 WoS 标签式格式，直接改扩展名无法转换数据。软件已针对特定数据和操作序列与原版进行比较，测试范围见[兼容性说明](compatibility.md)，不能据此推断所有输入和功能都与原版完全一致。
 
-遇到问题可在 [GitHub Issues](https://github.com/yangnim21029/histcite-mac/issues) 提供系统版本、App 版本、操作步骤与不含私人研究资料的最小示例。
+遇到问题可在 [GitHub Issues](https://github.com/yangcc-lab/histcite-mac/issues) 提供系统版本、App 版本、操作步骤与不含私人研究资料的最小示例。

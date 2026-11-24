@@ -26,4 +26,4 @@ Return to the main window and choose **Tools → Graph Maker…**. The graph arr
 
 - Eugene Garfield's 2004 paper describes how the original HistCite used Web of Science exports to map literature in chronological order. [Historiographic Mapping of Knowledge Domains Literature](https://journals.sagepub.com/doi/10.1177/0165551504042802).
 - The University of Pennsylvania archive collects papers about the original HistCite and related applications. [Papers on Algorithmic Historiography](https://garfield.library.upenn.edu/algorithmichistoriographyhistcite.html).
-- For the independent Mac implementation, see [verification results and compatibility limits](compatibility.md) and [how citation matching works](citation-matching.md). HistCite Mac is developed by `yangnim21029` and follows workflows from the original HistCite by Eugene Garfield and collaborators.
+- For the independent Mac implementation, see [verification results and compatibility limits](compatibility.md) and [how citation matching works](citation-matching.md). HistCite Mac is developed by `yangcc-lab` and follows workflows from the original HistCite by Eugene Garfield and collaborators.

@@ -1,6 +1,6 @@
 # HistCite Mac
 
-**這是`yangnim21029`獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
+**這是`yangcc-lab`獨立開發的 macOS 專案，並非原版 HistCite 的官方發行版。** 原版 HistCite 由 Eugene Garfield 與合作團隊開發；本專案與原團隊沒有隸屬關係。[專案身分與原版貢獻說明](docs/project-identity.md#繁體中文)。
 
 **HistCite Mac 是免費開源的 Mac 原生引文分析工具，可匯入 Web of Science 文獻、分析 LCS／GCS，並繪製引用關係圖。**
 
@@ -10,14 +10,14 @@ HistCite Mac 是一款以 Rust 獨立開發分析核心的 macOS 書目計量工
 
 **從文獻匯入、資料整理到引用分析，主要操作均可在 Mac 本機完成，無須安裝 Windows、Wine 或額外的程式開發環境。**
 
-[**下載 HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [專案網站](https://yangnim21029.github.io/histcite-mac/zh-TW/) · [60 秒操作示範](#60-秒看-histcite-mac-實際操作) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangnim21029/histcite-mac/releases)
+[**下載 HistCite Mac**](https://github.com/yangcc-lab/histcite-mac/releases/latest) · [專案網站](https://yangcc-lab.github.io/histcite-mac/zh-TW/) · [60 秒操作示範](#60-秒看-histcite-mac-實際操作) · [English](README.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [版本紀錄](https://github.com/yangcc-lab/histcite-mac/releases)
 
 macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
 - **想用 HistCite Mac 做研究？** 跟著[引文分析教學](docs/citation-analysis.zh-TW.md)匯入自己的 Web of Science 資料、追查引用並畫出引用圖。也可查看[兩份 WoS 原始匯出檔的直接匯入驗證](docs/compatibility.md#direct-import-check)。
 - **想了解程式怎麼實作？** 看[一條參考文獻如何成為引用連線](docs/citation-matching.md#繁體中文)，或從[開發指南](docs/development.md)開始建置、測試或參與開發。
 
-[![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
+[![Security checks](https://github.com/yangcc-lab/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangcc-lab/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangcc-lab/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangcc-lab/histcite-mac)
 
 徽章顯示自動檢查結果與專案維護評分，並非資安認證。[檢查範圍與已知限制](docs/security-review.md)包含舊版 Graphviz 尚待完成的審查。
 
@@ -37,15 +37,15 @@ macOS 13 Ventura 以上 · 支援 Apple Silicon 與 Intel Mac · 免費開源
 
 https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
-[下載 MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [英文字幕（SRT）](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
+[下載 MP4](https://github.com/yangcc-lab/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [英文字幕（SRT）](https://github.com/yangcc-lab/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
-HistCite Mac 由yangnim21029獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
+HistCite Mac 由yangcc-lab獨立實作；原版 HistCite 的成果歸於 Eugene Garfield 與合作團隊，本專案並非原作者的官方發行版。
 
 ## 從文獻資料到引用關係：三步開始
 
 ### 1. 下載並安裝
 
-前往[最新版本頁面](https://github.com/yangnim21029/histcite-mac/releases/latest)，下載 **Universal DMG**。Apple Silicon 與 Intel Mac 都使用同一份安裝檔。
+前往[最新版本頁面](https://github.com/yangcc-lab/histcite-mac/releases/latest)，下載 **Universal DMG**。Apple Silicon 與 Intel Mac 都使用同一份安裝檔。
 
 開啟 DMG 後，將 **HistCite Mac** 拖入 **Applications（應用程式）**資料夾，再從應用程式開啟。
 
@@ -152,7 +152,7 @@ Graph Maker 讓原本分散於多筆參考文獻清單中的引用資訊，成�
 
 **目前已有獨立開發的 HistCite Mac，可直接在 macOS 上執行。** 本專案參照 HistCite 12.03.17 的工作流程，提供本機引用分析與 Graph Maker，支援 macOS 13 以上；Apple Silicon 與 Intel Mac 使用同一份 Universal DMG，無須 Windows、Wine、CrossOver 或虛擬機。
 
-舊教學中的平台限制可能指原版 Windows HistCite 或 HistCite Pro。本專案是獨立實作，並非原作者推出的官方 Mac 版本。請從[最新版本頁面](https://github.com/yangnim21029/histcite-mac/releases/latest)下載，依前面的安裝步驟操作；目前發行版尚未經 Apple 公證，首次開啟方式也列在安裝說明中。
+舊教學中的平台限制可能指原版 Windows HistCite 或 HistCite Pro。本專案是獨立實作，並非原作者推出的官方 Mac 版本。請從[最新版本頁面](https://github.com/yangcc-lab/histcite-mac/releases/latest)下載，依前面的安裝步驟操作；目前發行版尚未經 Apple 公證，首次開啟方式也列在安裝說明中。
 
 ### 支援哪些輸入格式？
 
@@ -188,7 +188,7 @@ HistCite Mac 是使用 Rust 獨立開發的專案，參照 HistCite 12.03.17 的
 
 ## 回報問題與參與開發
 
-如果在文獻匯入、資料整理或圖形分析時遇到錯誤，歡迎透過 [GitHub Issues](https://github.com/yangnim21029/histcite-mac/issues) 回報。建議提供：
+如果在文獻匯入、資料整理或圖形分析時遇到錯誤，歡迎透過 [GitHub Issues](https://github.com/yangcc-lab/histcite-mac/issues) 回報。建議提供：
 
 - macOS 版本與 Mac 晶片類型。
 - 使用的檔案格式與 App 版本。
@@ -211,4 +211,4 @@ HistCite Mac 的原創程式碼採用 [MIT 授權](LICENSE)。第三方元件保
 
 第三方授權聲明及完整 Graphviz 原始碼已隨 App 提供，也可在倉庫中查閱 [Graphviz 與排序程式聲明](ui/THIRD-PARTY.txt)，以及 [Rust 相依元件聲明](licenses/Rust-dependencies.txt)。
 
-[**下載 HistCite Mac，開始分析文獻**](https://github.com/yangnim21029/histcite-mac/releases/latest)
+[**下載 HistCite Mac，開始分析文獻**](https://github.com/yangcc-lab/histcite-mac/releases/latest)

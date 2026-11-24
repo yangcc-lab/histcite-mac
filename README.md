@@ -1,6 +1,6 @@
 # HistCite Mac
 
-**An independent macOS project by `yangnim21029`, not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
+**An independent macOS project by `yangcc-lab`, not an official HistCite release.** The original HistCite was developed by Eugene Garfield and collaborators; this project is not affiliated with that team. [Project identity and attribution](docs/project-identity.md).
 
 **HistCite Mac is a free, native macOS app for Web of Science citation analysis and visualization.**
 
@@ -10,14 +10,14 @@ HistCite Mac is an independently developed macOS bibliometric tool with a Rust a
 
 **Importing, organizing and analyzing your collection all happen locally on your Mac. No Windows, Wine or programming environment is needed.**
 
-[**Download HistCite Mac**](https://github.com/yangnim21029/histcite-mac/releases/latest) · [Project website](https://yangnim21029.github.io/histcite-mac/) · [Watch the demo](#watch-histcite-mac-in-60-seconds) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangnim21029/histcite-mac/releases)
+[**Download HistCite Mac**](https://github.com/yangcc-lab/histcite-mac/releases/latest) · [Project website](https://yangcc-lab.github.io/histcite-mac/) · [Watch the demo](#watch-histcite-mac-in-60-seconds) · [繁體中文](README.zh-TW.md) · [简体中文安装指南](docs/mac-install.zh-CN.md) · [Release history](https://github.com/yangcc-lab/histcite-mac/releases)
 
 macOS 13 Ventura or later · Apple Silicon and Intel Macs · Free and open source
 
 - **Using HistCite Mac for research?** Follow the [citation analysis tutorial](docs/citation-analysis.md) to import your Web of Science export, trace a reference and draw a citation graph. See the [direct-import check on two original WoS exports](docs/compatibility.md#direct-import-check).
 - **Interested in the implementation?** Read [how a reference becomes a citation link](docs/citation-matching.md), or start with the [developer guide](docs/development.md) to build, test or contribute.
 
-[![Security checks](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangnim21029/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangnim21029/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangnim21029/histcite-mac)
+[![Security checks](https://github.com/yangcc-lab/histcite-mac/actions/workflows/security.yml/badge.svg?branch=main)](https://github.com/yangcc-lab/histcite-mac/actions/workflows/security.yml) [![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/yangcc-lab/histcite-mac/badge)](https://scorecard.dev/viewer/?uri=github.com/yangcc-lab/histcite-mac)
 
 These badges show automated check results and repository practices. See the [review scope and known limitations](docs/security-review.md), including the legacy Graphviz engine; they are not security certification.
 
@@ -37,15 +37,15 @@ The video demonstrates the interface, not compatibility with every current WoS e
 
 https://github.com/user-attachments/assets/0c809917-e373-4628-b55f-fc354c1838c0
 
-[Download the MP4](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangnim21029/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
+[Download the MP4](https://github.com/yangcc-lab/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.mp4) · [English subtitles (SRT)](https://github.com/yangcc-lab/histcite-mac/releases/download/v0.3.4/HistCite-Mac-demo-en.srt)
 
-HistCite Mac is an independent implementation by yangnim21029. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
+HistCite Mac is an independent implementation by yangcc-lab. Credit for the original HistCite belongs to Eugene Garfield and collaborators; this is not an official release from the original authors.
 
 ## Start in three steps
 
 ### 1. Download and install
 
-Download the **Universal DMG** from the [latest release](https://github.com/yangnim21029/histcite-mac/releases/latest). The same file works on both Apple Silicon and Intel Macs.
+Download the **Universal DMG** from the [latest release](https://github.com/yangcc-lab/histcite-mac/releases/latest). The same file works on both Apple Silicon and Intel Macs.
 
 Open the DMG and drag **HistCite Mac** into **Applications**, then open the app from there.
 
@@ -152,7 +152,7 @@ All views describe the collection you imported. Search criteria, database covera
 
 **HistCite Mac is available as an independent macOS app.** It follows HistCite 12.03.17 workflows and provides local citation analysis and Graph Maker on macOS 13 or later, with one Universal DMG for Apple Silicon and Intel Macs. It does not require Windows, Wine, CrossOver or a virtual machine.
 
-Older guides may describe the original Windows application or HistCite Pro. This project is a separate implementation, not an official macOS release from the original HistCite authors. [Download the Mac app](https://github.com/yangnim21029/histcite-mac/releases/latest) and follow the [installation steps](#start-in-three-steps), including the first-launch instructions for this unnotarized community build.
+Older guides may describe the original Windows application or HistCite Pro. This project is a separate implementation, not an official macOS release from the original HistCite authors. [Download the Mac app](https://github.com/yangcc-lab/histcite-mac/releases/latest) and follow the [installation steps](#start-in-three-steps), including the first-launch instructions for this unnotarized community build.
 
 ### Which input formats are supported?
 
@@ -188,7 +188,7 @@ See [compatibility and validation](docs/compatibility.md) for the comparisons an
 
 ## Report a problem or contribute
 
-If you encounter an error during import, record editing or graph analysis, please [open a GitHub issue](https://github.com/yangnim21029/histcite-mac/issues). Useful details include:
+If you encounter an error during import, record editing or graph analysis, please [open a GitHub issue](https://github.com/yangcc-lab/histcite-mac/issues). Useful details include:
 
 - Your macOS version and Mac chip type
 - The input file format and app version
@@ -211,4 +211,4 @@ HistCite Mac's original code is [MIT licensed](LICENSE). Bundled components reta
 
 Third-party notices and complete Graphviz source are included in the app. You can also read the [Graphviz and sorting notices](ui/THIRD-PARTY.txt) and [Rust dependency notices](licenses/Rust-dependencies.txt) in this repository.
 
-[**Download HistCite Mac and explore your literature collection**](https://github.com/yangnim21029/histcite-mac/releases/latest)
+[**Download HistCite Mac and explore your literature collection**](https://github.com/yangcc-lab/histcite-mac/releases/latest)

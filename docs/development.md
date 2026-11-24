@@ -1,6 +1,6 @@
 # Developer guide
 
-The [Mac download](https://github.com/yangnim21029/histcite-mac/releases/latest) is the recommended installation for researchers. This guide is for contributors and source builds.
+The [Mac download](https://github.com/yangcc-lab/histcite-mac/releases/latest) is the recommended installation for researchers. This guide is for contributors and source builds.
 
 ## Contribute a fix or improvement
 
@@ -13,7 +13,7 @@ The [Mac download](https://github.com/yangnim21029/histcite-mac/releases/latest)
 Use macOS 13 or later, Xcode Command Line Tools, Rust 1.99.1 or later (edition 2024), and Python 3.9 or later. The UI has no npm build step. The offline layout engine is already included.
 
 ```sh
-git clone https://github.com/yangnim21029/histcite-mac.git
+git clone https://github.com/yangcc-lab/histcite-mac.git
 cd histcite-mac
 python3 scripts/build_macos.py
 open "dist/HistCite Mac.app"
