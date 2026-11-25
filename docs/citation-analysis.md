@@ -6,17 +6,23 @@ A large collection of records from Web of Science (WoS) takes time to read. Find
 
 This guide uses the English menus in HistCite Mac v0.3.5 to import records, analyze citations, and draw a citation graph.
 
+The screenshots show the HistCite Mac HTML view of the included practice file.
+
 ## 1. Import records and check the data
 
 1. On the WoS results page, choose **Export → Plain Text File** and select **Full Record and Cited References** for the record content. Keep the original `.txt` files and record the search criteria.
 2. Follow the [Mac installation instructions](https://github.com/yangcc-lab/histcite-mac/blob/main/README.md#1-download-and-install). Choose **File → Open collection…** and select one or more WoS export files.
 3. Open **Tools → Data checks** to see which records lack cited references and review how duplicate records were merged.
 
+![Data checks shows import warnings, references with no match in the collection, and the status of duplicate merges](images/tutorial-data-checks.png)
+
 The reliability of the analysis depends on the imported data. HistCite Mac identifies the works cited in each reference list to establish links within the collection. Check the completeness of those lists first so you can judge whether the data support a finding of no local citations.
 
 ## 2. Compare LCS and GCS to find papers to read
 
 After importing the records, sort by **LCS** to see which papers are cited most often within the current collection.
+
+![The records table is sorted by LCS, with the LCS and GCS columns side by side to the right of each paper title](images/tutorial-lcs-gcs.png)
 
 - **LCS (Local Citation Score)** counts the distinct records in the current collection that cite a work. An LCS of 8 means eight records in the collection cite it.
 - **GCS (Global Citation Score)** is the citation count supplied by WoS at the time of export. It stays fixed after import.
@@ -33,6 +39,8 @@ LCS tells you how many records cite a work. Open the record details to see which
 2. Under **Citing records**, find a paper that cites the work.
 3. Expand **Match evidence** to check the original reference text and the matching method.
 
+![The Citing records section with Match evidence expanded for one citation, showing the original reference and the matching method](images/tutorial-match-evidence.png)
+
 HistCite Mac compares cited references with bibliographic records in the collection. The default Histcite mode builds a matching key primarily from the first author's surname and first initial, the publication year, the volume, and the starting page. A unique match establishes a citation link. When several records match, the program records the ambiguity for review.
 
 **Match evidence lets you trace a citation count back to the records that contribute to it.** If every LCS is zero, use **Data checks** to look for missing data before judging whether the collection contains any direct citations.
@@ -40,6 +48,8 @@ HistCite Mac compares cited references with bibliographic records in the collect
 ## 4. Draw a citation graph to explore relationships between studies
 
 Choose **Tools → Graph Maker…** to plot the records and their citation links. The graph arranges the selected papers by publication year. Hover over a node for information about the paper or click it to open the record details.
+
+![Graph Maker plots papers and citation links by year and displays an SVG export button above the graph](images/tutorial-graph-maker.png)
 
 LCS summarizes how often a paper is cited within the collection. The graph shows which works cite which others and when they were published. When several later papers cite an early study, you can identify them in the graph and read them to see how they used, extended, or revised the earlier work.
 
