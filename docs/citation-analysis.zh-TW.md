@@ -6,17 +6,23 @@
 
 以下以 HistCite Mac v0.3.5 的英文選單為例，介紹文獻匯入、引用分析與引文圖製作的操作流程。
 
+操作畫面取自 HistCite Mac 的 HTML 檢視，使用隨附的公開練習檔。
+
 ## 一、匯入文獻並檢查資料
 
 1. 在 WoS 檢索結果頁選擇 **Export → Plain Text File**，紀錄內容選擇 **Full Record and Cited References**，並保留原始 `.txt` 檔及檢索條件。
 2. 依照 [Mac 安裝說明](https://github.com/yangcc-lab/histcite-mac/blob/main/README.zh-TW.md#1-下載並安裝)安裝程式，選擇 **File → Open collection…**，匯入一個或多個 WoS 檔案。
 3. 開啟 **Tools → Data checks**，確認參考文獻缺漏情形與重複紀錄合併結果。
 
+![Data checks 顯示匯入警告、未比對到集合內紀錄的參考文獻，以及重複紀錄的合併情形](images/tutorial-data-checks.png)
+
 資料檢查會影響後續引用分析的可靠性。HistCite Mac 必須從參考文獻清單辨識引用對象，才能建立集合內的引用連線。因此，研究者應先確認資料完整性，避免將無法辨識的引用關係誤判為沒有引用。
 
 ## 二、比較 LCS 與 GCS，尋找值得閱讀的研究
 
 匯入文獻後，點選 **LCS** 欄位排序，即可觀察哪些研究在目前集合中被較多文章引用。
+
+![文獻清單依 LCS 排序，LCS 與 GCS 兩欄並列在文獻標題右側](images/tutorial-lcs-gcs.png)
 
 - **LCS（Local Citation Score）** 計算目前文獻集合中引用某篇研究的不同文獻數量。例如 LCS 為 8，表示集合中有 8 篇文獻引用該研究。
 - **GCS（Global Citation Score）** 是 WoS 匯出時提供的被引用次數，匯入後不會自動更新。
@@ -33,6 +39,8 @@ LCS 能顯示文獻被引用的次數，卻無法直接說明引用來自哪些�
 2. 在 **Citing records** 查看引用該研究的文章。
 3. 展開 **Match evidence**，核對參考文獻原文與比對方式。
 
+![文獻詳情的 Citing records 區塊，已展開一筆 Match evidence，顯示參考文獻原文及比對方式](images/tutorial-match-evidence.png)
+
 HistCite Mac 會將參考文獻與集合內書目進行比對。預設的 Histcite 模式主要使用第一作者姓氏、名字首字母、出版年份、卷號及起始頁建立比對鍵。當參考文獻符合唯一紀錄時，程式便建立引用連線。若符合多筆紀錄，則保留歧義供檢查。
 
 **Match evidence 讓研究者從引用次數進一步追溯至具體的引用紀錄。** 若所有 LCS 都是 0，也可先透過 Data checks 確認資料是否缺漏，再判斷集合內是否確實缺乏直接引用。
@@ -40,6 +48,8 @@ HistCite Mac 會將參考文獻與集合內書目進行比對。預設的 Histci
 ## 四、繪製引文圖，觀察研究之間的關係
 
 選擇 **Tools → Graph Maker…**，即可將文獻與引用關係繪製成圖。圖中的文獻依出版年份排列，將游標移至節點可查看資訊，點選節點則可開啟文獻詳情。
+
+![Graph Maker 按年份排列文獻節點與引文連線，圖形上方有 SVG 匯出按鈕](images/tutorial-graph-maker.png)
 
 相較於 LCS 呈現引用次數，引文圖保留了引用者、被引文獻與出版時間之間的關係。例如，當一篇早期研究被多篇後續文章引用時，研究者可從圖中辨認引用者，再回到原文分析後續研究如何使用、延伸或修正先前的成果。
 
