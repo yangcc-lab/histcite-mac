@@ -65,7 +65,7 @@ jobs:
           unzip -p "$1" 'semgrep-*.data/purelib/semgrep/bin/semgrep-core' > "$tool_dir/osemgrep"
           unzip -qj "$1" 'semgrep-*.data/purelib/semgrep/bin/libs/lib*.so*' -d "$tool_dir/libs"
           chmod 0755 "$tool_dir/osemgrep"
-          "$tool_dir/osemgrep" --version
+          "$tool_dir/osemgrep" scan --experimental --version
       - run: python3 scripts/check_security.py source
         env:
           SEMGREP_NATIVE: ${{ runner.temp }}/native-semgrep/osemgrep
