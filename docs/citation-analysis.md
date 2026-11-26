@@ -4,7 +4,7 @@
 
 A large collection of records from Web of Science (WoS) takes time to read. Finding which works are cited repeatedly and how studies from different years connect can help you decide where to start. HistCite Mac combines citation counts, the reference text behind each matched citation, and citation graphs to help you investigate those relationships.
 
-This guide uses the English menus in HistCite Mac v0.3.5 to import records, analyze citations, and draw a citation graph.
+This guide uses the English menus in HistCite Mac v0.3.6 to import records, analyze citations, and draw a citation graph.
 
 The screenshots show the HistCite Mac HTML view of the included practice file.
 
