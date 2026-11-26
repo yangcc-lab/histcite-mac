@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: '3.12'
       - run: rustup default stable
-      - run: pip install -r tests/requirements.txt
+      - run: 'pip install --require-hashes --only-binary=:all: -r tests/requirements-ci.txt'
       - run: python -m playwright install --with-deps chromium
       - run: python scripts/check_interactions.py
       - run: python scripts/check_demo.py
