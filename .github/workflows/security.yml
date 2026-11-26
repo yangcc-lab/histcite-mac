@@ -52,8 +52,22 @@ jobs:
       - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
         with:
           python-version: '3.12'
-      - run: 'pip install --require-hashes --only-binary=:all: -r .github/requirements-semgrep.txt'
+      - name: Prepare the native scanner from the verified Semgrep wheel
+        shell: bash
+        run: |
+          set -euo pipefail
+          tool_dir="$RUNNER_TEMP/native-semgrep"
+          mkdir -p "$tool_dir"
+          pip download --no-deps --require-hashes --only-binary=:all: \
+            -r .github/requirements-semgrep.txt --dest "$tool_dir"
+          set -- "$tool_dir"/semgrep-*.whl
+          test "$#" -eq 1
+          unzip -p "$1" 'semgrep-*.data/purelib/semgrep/bin/semgrep-core' > "$tool_dir/osemgrep"
+          chmod 0755 "$tool_dir/osemgrep"
+          "$tool_dir/osemgrep" --version
       - run: python3 scripts/check_security.py source
+        env:
+          SEMGREP_NATIVE: ${{ runner.temp }}/native-semgrep/osemgrep
       - uses: github/codeql-action/upload-sarif@33d7b85da1a04171e211befe2c739303b9a4c066 # v4.39.3
         if: always() && github.event_name != 'pull_request'
         with:

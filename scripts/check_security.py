@@ -36,11 +36,20 @@ if args.group in ('rust', 'all'):
         run('deny-' + label, [cargo, 'deny', '--locked', '--manifest-path', manifest,
                              '--config', 'deny.toml', 'check'])
 if args.group in ('source', 'all'):
-    run('semgrep', ['semgrep', 'scan', '--config', 'p/security-audit', '--config', 'p/trailofbits',
-                    '--metrics', 'off', '--disable-version-check', '--strict', '--error',
-                    '--exclude', 'ui/graphviz.js', '--json', '--output', str(out / 'semgrep.json'),
-                    '--sarif-output', str(out / 'semgrep.sarif'),
-                    'src', 'desktop/src', 'ui', 'scripts', 'vendor/graphviz-port'])
+    semgrep_options = ['--config', 'p/security-audit', '--config', 'p/trailofbits',
+                       '--metrics', 'off', '--disable-version-check', '--strict',
+                       '--exclude', 'ui/graphviz.js']
+    targets = ['src', 'desktop/src', 'ui', 'scripts', 'vendor/graphviz-port']
+    native_semgrep = os.environ.get('SEMGREP_NATIVE')
+    if native_semgrep:
+        command = [native_semgrep, 'scan', '--experimental'] + semgrep_options
+        # JSON gates unsuppressed findings. SARIF also includes in-source suppressions.
+        run('semgrep', command + ['--error', '--json'] + targets, 'semgrep.json')
+        run('semgrep-sarif', command + ['--sarif'] + targets, 'semgrep.sarif')
+    else:
+        run('semgrep', ['semgrep', 'scan'] + semgrep_options +
+            ['--error', '--json', '--output', str(out / 'semgrep.json'),
+             '--sarif-output', str(out / 'semgrep.sarif')] + targets)
 if args.group in ('secrets', 'all'):
     run('gitleaks', ['gitleaks', 'git', '--redact', '--log-opts=--all', '--report-format', 'json',
                      '--report-path', str(out / 'gitleaks.json'), '.'])
