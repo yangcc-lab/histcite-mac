@@ -30,6 +30,27 @@ This installs both Rust targets, builds each architecture, combines them with `l
 
 After dependency changes, regenerate bundled Rust license notices with `python3 scripts/package_rust_notices.py`. This reads the locked macOS dependency graph and retrieves missing upstream notices. Regular builds use the checked-in notices and do not need that step.
 
+## Build and verify release downloads
+
+The [Attested macOS build](../.github/workflows/release-build.yml) builds a Universal DMG on a GitHub-hosted runner. A version tag that matches the app version and is on main history creates a release build. A manual run on main is useful for testing the pipeline.
+
+For a release, download the `attested-macos-build` artifact from the successful run for the version tag. Use the DMG, `SHA256SUMS.txt`, the practice dataset, and the matching `.intoto.jsonl` file together when uploading assets to a GitHub release draft.
+
+Verify the downloaded file locally with GitHub CLI. Substitute the release tag you are checking.
+
+```sh
+tag=vX.Y.Z
+dmg="HistCite-Mac-${tag#v}-universal.dmg"
+commit=$(gh api "repos/yangcc-lab/histcite-mac/commits/$tag" --jq .sha)
+shasum -a 256 -c SHA256SUMS.txt
+gh attestation verify "$dmg" --bundle "$dmg.intoto.jsonl" \
+  --repo yangcc-lab/histcite-mac \
+  --signer-workflow yangcc-lab/histcite-mac/.github/workflows/release-build.yml \
+  --source-ref "refs/tags/$tag" --source-digest "$commit" --deny-self-hosted-runners
+```
+
+The verification reports the source commit and workflow that produced the file.
+
 ## Run the tests
 
 Rust 1.99.1 is the tested support floor, not a claim that earlier compilers cannot work. CI tests the core on that version and current stable. On macOS, run `cargo test --manifest-path desktop/Cargo.toml --locked` for background scheduling tests as well.

@@ -92,6 +92,6 @@ python3 scripts/check_security.py all
 cargo test --locked
 ```
 
-Use `rust`, `source` or `secrets` instead of `all` for one group. Results go to ignored `.runtime/security/`. Exact scanner versions are in [security.yml](../.github/workflows/security.yml); dependency policy is in [deny.toml](../deny.toml). Registry rules and advisories intentionally refresh, so later results may differ.
+Use `rust`, `source` or `secrets` instead of `all` for one group. Results go to ignored `.runtime/security/`. The [CI scanner requirements](../.github/requirements-semgrep.txt) pin Semgrep and its Python dependencies by SHA-256. Dependency policy for the Rust packages is in [deny.toml](../deny.toml). Registry rules and advisories intentionally refresh, so later results may differ.
 
 Application fixes and CI/report changes are separate Conventional Commits, reviewed with `git diff --cached` and `git diff --cached --check`. Raw private agent logs are not uploaded to CI.
