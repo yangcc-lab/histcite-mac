@@ -92,6 +92,8 @@ python3 scripts/check_security.py all
 cargo test --locked
 ```
 
-Use `rust`, `source` or `secrets` instead of `all` for one group. Results go to ignored `.runtime/security/`. The [CI scanner requirements](../.github/requirements-semgrep.txt) pin Semgrep and its Python dependencies by SHA-256. Dependency policy for the Rust packages is in [deny.toml](../deny.toml). Registry rules and advisories intentionally refresh, so later results may differ.
+Use `rust`, `source` or `secrets` instead of `all` for one group. Results go to ignored `.runtime/security/`. CI extracts the native scanner and its bundled shared libraries from the [SHA-256-pinned Semgrep wheel](../.github/requirements-semgrep.txt). The local command uses the standard Semgrep CLI. Dependency policy for the Rust packages is in [deny.toml](../deny.toml). Registry rules and advisories intentionally refresh, so later results may differ.
+
+CI also runs [CodeQL](../.github/workflows/codeql.yml) for Rust, JavaScript and Python. The [import fuzzer](../.github/workflows/fuzz-import.yml) uses the public WoS example to exercise the desktop collection parser under AddressSanitizer.
 
 Application fixes and CI/report changes are separate Conventional Commits, reviewed with `git diff --cached` and `git diff --cached --check`. Raw private agent logs are not uploaded to CI.
