@@ -396,7 +396,7 @@ pub(crate) fn analyze_retained(
                     });
                     continue;
                 }
-                if candidates.is_empty() {
+                if reference.dois.is_empty() {
                     method = "bibliographic";
                     let key = ref_key(
                         &reference.author,

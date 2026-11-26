@@ -155,6 +155,34 @@ fn doi_mode_is_distinct_from_legacy_mode() {
 }
 
 #[test]
+fn doi_mode_leaves_an_explicit_doi_outside_the_collection_unmatched() {
+    let text = record(
+        "smith",
+        "Smith, AB",
+        2020,
+        "",
+        "10.99999/in-collection",
+        &["Smith AB, 2020, TEST JOURNAL, V1, DOI 10.99999/outside-collection"],
+    ) + &record(
+        "jones",
+        "Jones, A",
+        2021,
+        "102",
+        "",
+        &["Smith AB, 2020, TEST JOURNAL, V1"],
+    );
+    let analysis = analyze_with_mode(parse_wos(&text, "external-doi").unwrap(), MatchingMode::Doi);
+
+    assert_eq!(analysis.edges.len(), 1);
+    let edge = &analysis.edges[0];
+    assert_eq!(analysis.records[edge.citing].id, "jones");
+    assert_eq!(analysis.records[edge.cited].id, "smith");
+    assert_eq!(edge.method, "bibliographic");
+    assert_eq!(analysis.lcs[edge.cited], 1);
+    assert_eq!(analysis.unmatched_reference_count, 1);
+}
+
+#[test]
 fn distinct_dois_require_review_even_if_only_one_is_in_collection() {
     let text = record("b", "Smith, AB", 2020, "101", "10.99999/test", &[])
         + &record(
